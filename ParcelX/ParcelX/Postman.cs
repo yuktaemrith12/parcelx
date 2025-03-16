@@ -52,11 +52,29 @@ namespace PostalCW
             control.Region = new Region(path);
         }
 
+        // SAVE BUTTON
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
 
-        
-       
+        // == EDIT OFFICER ==
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        // == DELETE OFFICER ==
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+
     }
 
 
