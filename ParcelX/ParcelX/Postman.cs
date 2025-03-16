@@ -75,6 +75,26 @@ namespace PostalCW
         }
 
 
+        //BACK BUTTON FUNCTIONALITY
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //SEARCH FUNCTIONALITY
+        private void SearchIcon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void CrossIcon_Click_1(object sender, EventArgs e)
+        {
+
+
+        }
+
+
     }
 
 
