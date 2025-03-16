@@ -67,17 +67,4 @@ CREATE TABLE CashTransferTbl (
 );
 GO
 
--- CREATE DELIVERY TABLE
-CREATE TABLE DeliveryTbl (
-    DeliveryID       INT           IDENTITY (1, 1) NOT NULL,
-    OfficerID        INT           NOT NULL,
-    OfficerName      VARCHAR (50)  NOT NULL,
-    OfficerContact   VARCHAR (50)  NOT NULL,
-    ParcelID         INT           NOT NULL,
-    DeliveryDate     DATE          NOT NULL,
-    Fees             INT           NOT NULL,
-    ReceiverName     VARCHAR (50)  NOT NULL,
-    ReceiverAddress  VARCHAR (100) NOT NULL,
-    PRIMARY KEY (DeliveryID)
-);
-GO
+
