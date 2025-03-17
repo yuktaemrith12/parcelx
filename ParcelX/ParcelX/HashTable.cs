@@ -28,6 +28,17 @@ namespace PostalCW.DataStructures
             buckets[index].Add(new KeyValuePair<int, T>(key, value));
         }
 
+        public T Get(int key)
+        {
+            int index = GetHash(key);
+            foreach (var kvp in buckets[index])
+            {
+                if (kvp.Key == key)
+                    return kvp.Value;
+            }
+            return default; // Not found
+        }
+
 
     }
 }
