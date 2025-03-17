@@ -45,5 +45,17 @@ namespace PostalCW.DataStructures
             buckets[index].RemoveAll(kvp => kvp.Key == key);
         }
 
+        public List<T> GetAll()
+        {
+            List<T> allItems = new List<T>();
+            foreach (var bucket in buckets)
+            {
+                foreach (var kvp in bucket)
+                {
+                    allItems.Add(kvp.Value);
+                }
+            }
+            return allItems;
+        }
     }
 }
