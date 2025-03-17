@@ -1,0 +1,1000 @@
+1,Prakash Jeetun,Chamarel,51919194,13/7/2023,Part-Time
+2,Anjali Persand,Pamplemousses,51593285,28/9/2008,Full-Time
+3,Ananya Sunassee,Black River,57374338,12/2/2003,Part-Time
+4,Gautam Ghoorbin,Terre Rouge,51090394,23/5/2018,Part-Time
+5,Suresh Boodhoo,Flacq,57554896,10/8/2007,Full-Time
+6,Arjun Persand,Rose Hill,54371209,16/10/2019,Full-Time
+7,Nikita Ramsamy,Goodlands,59885469,25/4/2023,Part-Time
+8,Ravi Persand,Albion,56694708,27/11/2005,Full-Time
+9,Jayesh Boodhun,Roches Noires,51681154,27/12/2022,Part-Time
+10,Ajay Bissessur,Black River,54152182,27/2/2010,Part-Time
+11,Nikita Ravina,Riviere du Rempart,55713072,23/1/2006,Full-Time
+12,Sandeep Mootoosamy,Beau Bassin,57121338,15/3/2008,Part-Time
+13,Lavina Neermul,Le Morne,52882406,6/6/2024,Full-Time
+14,Bhavesh Hurchurn,Curepipe,59215001,27/1/2022,Full-Time
+15,Viveka Jeetun,Flic en Flac,59829626,17/11/2012,Full-Time
+16,Sneha Sobhee,Curepipe,57944968,8/3/2013,Full-Time
+17,Vandana Rama,Goodlands,59869538,17/1/2003,Part-Time
+18,Aisha Seetohul,Goodlands,59184318,18/7/2001,Full-Time
+19,Kavya Bissessur,Grand Baie,57136726,12/11/2005,Full-Time
+20,Reshma Teeluck,Port Louis,58965589,24/12/2013,Full-Time
+21,Tanya Soondrum,Goodlands,56806408,21/6/2012,Part-Time
+22,Aisha Puttee,Flacq,53415714,12/8/2025,Full-Time
+23,Divya Bissessur,Port Louis,57226984,3/12/2007,Full-Time
+24,Umesh Boodhun,Moka,59713654,10/4/2013,Full-Time
+25,Rohini Lutchmun,Mahébourg,57424419,25/1/2000,Full-Time
+26,Mira Teeluck,Curepipe,53669986,3/4/2002,Part-Time
+27,Preeti Luchmun,Piton,59788275,25/8/2019,Full-Time
+28,Eshan Neermul,Triolet,56267666,5/6/2002,Part-Time
+29,Arvind Jankee,Vacoas,51866518,3/1/2013,Part-Time
+30,Kavita Mungur,Le Morne,54937127,18/8/2002,Part-Time
+31,Chirag Ramphool,Baie du Tombeau,54782569,28/3/2024,Full-Time
+32,Anupam Rama,Baie du Tombeau,54919557,1/10/2023,Full-Time
+33,Keshav Jeebun,Port Louis,55161664,18/4/2001,Full-Time
+34,Anupam Boodhun,Piton,51241243,17/1/2006,Full-Time
+35,Ishan Hurchurn,Triolet,56271774,28/6/2004,Part-Time
+36,Amit Persand,Tamarin,54275987,16/2/2004,Full-Time
+37,Keshav Ghoorbin,Piton,53301263,15/8/2017,Full-Time
+38,Aarya Mungly,Albion,53554919,24/3/2020,Part-Time
+39,Roshni Nagappa,Rose Hill,53569186,11/12/2024,Part-Time
+40,Asha Pillay,Souillac,54315635,26/1/2024,Full-Time
+41,Alok Moosun,Port Louis,57219373,24/12/2008,Full-Time
+42,Siddharth Beekharry,Port Louis,57681527,13/3/2017,Part-Time
+43,Suraj Bodha,Terre Rouge,52005559,22/1/2021,Part-Time
+44,Jatin Daby,Souillac,55127555,8/8/2008,Full-Time
+45,Zeenat Mootoosamy,Roches Noires,54521440,14/6/2012,Part-Time
+46,Geeta Ramphul,Vacoas,54796977,7/9/2015,Part-Time
+47,Divya Neermul,Rose Hill,56106107,1/10/2020,Full-Time
+48,Jasmine Ramchurn,Bel Air,55419685,11/2/2019,Full-Time
+49,Disha Ramchunder,Port Louis,57529156,4/12/2010,Part-Time
+50,Bina Ramphul,Riviere du Rempart,55814533,28/3/2009,Full-Time
+51,Sumit Jhamat,Piton,51004862,20/9/2003,Part-Time
+52,Puneet Gokhool,Flacq,55509023,15/9/2016,Full-Time
+53,Bharat Bhujun,Flic en Flac,56404715,24/3/2001,Full-Time
+54,Neha Beekharry,Goodlands,54918623,2/8/2012,Full-Time
+55,Divya Parmessur,Terre Rouge,53000192,12/7/2015,Part-Time
+56,Deepak Nuckchady,Phoenix,59635538,11/3/2011,Full-Time
+57,Shreya Mungly,Chemin Grenier,53983626,18/2/2014,Part-Time
+58,Reshma Ramtohul,Riviere du Rempart,52316659,20/5/2000,Part-Time
+59,Rohit Sooreea,Tamarin,51683926,4/5/2014,Part-Time
+60,Vandana Kistnen,Moka,57806907,20/5/2008,Part-Time
+61,Chirag Luchmun,Souillac,56179514,10/9/2023,Part-Time
+62,Manish Mahadeo,Grand Baie,56449489,25/10/2024,Full-Time
+63,Arvind Jhamat,Tamarin,51929516,28/6/2025,Full-Time
+64,Ishita Ramchunder,Souillac,55420178,12/3/2002,Full-Time
+65,Sneha Aumeer,Goodlands,54051275,4/3/2020,Full-Time
+66,Puneet Madhow,Flic en Flac,59708813,15/7/2006,Full-Time
+67,Vivek Seeborun,Le Morne,52290049,11/11/2025,Full-Time
+68,Disha Pillay,Piton,53309988,2/6/2021,Part-Time
+69,Mahesh Ramasawmy,Moka,59883525,2/3/2021,Part-Time
+70,Puneet Mawjee,Chamarel,55848704,12/6/2020,Part-Time
+71,Eshan Sungkur,Chamarel,57805400,2/10/2010,Part-Time
+72,Hemant Mootoosamy,Beau Bassin,57930392,24/1/2012,Full-Time
+73,Vikas Rungasamy,Tamarin,55527579,16/3/2023,Full-Time
+74,Asha Jeetun,Grand Baie,55579911,9/1/2024,Part-Time
+75,Mahesh Seetohul,Mahébourg,51332128,4/1/2004,Part-Time
+76,Bhavesh Bissessur,Mahébourg,51767340,27/4/2023,Part-Time
+77,Vandana Beekharry,Flic en Flac,51055739,1/2/2018,Part-Time
+78,Sneha Hurrynag,Le Morne,53171083,4/4/2024,Part-Time
+79,Suraj Nuckchady,Roches Noires,51563721,27/2/2023,Part-Time
+80,Jasmine Gunness,Riviere du Rempart,58247239,8/10/2016,Full-Time
+81,Akshay Ramasawmy,Riviere du Rempart,58982362,21/6/2016,Full-Time
+82,Disha Pather,Flic en Flac,57311588,9/1/2009,Part-Time
+83,Divya Soondrum,Terre Rouge,51663355,2/5/2003,Full-Time
+84,Nikhil Ramsamy,Riviere du Rempart,53680820,8/7/2006,Full-Time
+85,Kiran Ramphool,Pamplemousses,58889490,23/9/2022,Part-Time
+86,Gautam Beekharry,Rose Hill,56270474,13/4/2010,Part-Time
+87,Arvind Jankee,Beau Bassin,52921322,6/3/2016,Full-Time
+88,Sneha Bhujun,Vacoas,52302560,13/6/2005,Full-Time
+89,Neha Ramtohul,Triolet,55368415,16/9/2011,Full-Time
+90,Sarita Mungly,Baie du Tombeau,59722719,21/7/2024,Part-Time
+91,Rajeev Bissessur,Baie du Tombeau,58405670,16/11/2002,Part-Time
+92,Sneha Hurchand,Port Louis,55761786,17/3/2006,Part-Time
+93,Ravi Sungkur,Tamarin,52595620,22/6/2024,Full-Time
+94,Karan Luchmun,Grand Baie,54823996,26/7/2016,Part-Time
+95,Bharat Jeebun,Le Morne,55598000,14/9/2005,Part-Time
+96,Madhavi Luchmun,Triolet,54228753,22/4/2012,Part-Time
+97,Vivek Ramtohul,Grand Baie,58459111,23/1/2014,Full-Time
+98,Reyansh Bhagwandeen,Goodlands,53425583,15/6/2015,Part-Time
+99,Ishita Mungly,Souillac,51919165,25/4/2006,Part-Time
+100,Neha Ramphool,Goodlands,58121905,2/2/2005,Part-Time
+101,Jayesh Seewooboodhul,Piton,54107301,26/8/2007,Full-Time
+102,Akshay Jhamat,Flacq,51925437,28/1/2015,Part-Time
+103,Geeta Bheekhun,Petit Raffray,56888479,21/4/2017,Part-Time
+104,Arjun Boodhoo,Beau Bassin,51642638,12/9/2006,Part-Time
+105,Sneha Bheemul,Tamarin,58280906,18/6/2011,Full-Time
+106,Deepak Ramnauth,Curepipe,51899449,3/9/2014,Part-Time
+107,Aryan Bhujun,Rose Hill,55536916,21/2/2022,Part-Time
+108,Neha Bhujoharry,Roches Noires,59191385,13/9/2023,Part-Time
+109,Amit Mungly,Baie du Tombeau,57729698,1/5/2004,Full-Time
+110,Kiran Sookun,Mahébourg,52374307,23/9/2020,Part-Time
+111,Dev Kistnen,Curepipe,53442293,5/2/2002,Part-Time
+112,Dev Nundlall,Piton,54518485,10/12/2001,Part-Time
+113,Neha Bheekhun,Souillac,55251403,7/12/2011,Part-Time
+114,Darshan Ramasawmy,Le Morne,57005969,22/9/2023,Part-Time
+115,Arjun Rungasamy,Phoenix,57895236,6/5/2023,Part-Time
+116,Lavina Tandrayen,Flacq,59633149,7/8/2016,Full-Time
+117,Mahesh Nurseemul,Albion,59334798,27/4/2000,Full-Time
+118,Vidya Sookun,Flic en Flac,53856707,18/1/2021,Part-Time
+119,Namrata Ramchurn,Le Morne,51955791,8/12/2010,Part-Time
+120,Neha Teeluck,Le Morne,59405869,15/4/2008,Part-Time
+121,Jasmine Nurseemul,Piton,52593582,11/3/2016,Part-Time
+122,Rhea Nurseemul,Curepipe,57791274,26/11/2011,Part-Time
+123,Preeti Rama,Goodlands,54648994,13/1/2023,Full-Time
+124,Eshan Teeluck,Albion,55073632,9/12/2022,Part-Time
+125,Vidya Mungur,Vacoas,56377722,4/4/2021,Full-Time
+126,Chirag Mungur,Souillac,57038113,11/7/2018,Part-Time
+127,Sneha Mungly,Port Louis,54229206,2/9/2007,Part-Time
+128,Neha Gujadhur,Beau Bassin,57636357,16/9/2022,Full-Time
+129,Amit Puttee,Chemin Grenier,57723036,8/4/2000,Full-Time
+130,Sandeep Mungur,Moka,57344344,7/9/2009,Part-Time
+131,Tanya Persand,Phoenix,53353498,4/12/2018,Full-Time
+132,Jatin Gokhool,Goodlands,59282435,17/4/2019,Full-Time
+133,Lavina Nundlall,Mahébourg,54869477,11/3/2024,Part-Time
+134,Nikhil Bissoondoyal,Quatre Bornes,52695018,3/12/2020,Full-Time
+135,Rohini Pather,Mahébourg,51689059,23/8/2005,Part-Time
+136,Lavina Beekharry,Petit Raffray,58350860,16/1/2024,Full-Time
+137,Anjali Nundlall,Quatre Bornes,57814793,13/10/2004,Part-Time
+138,Tushar Kistnen,Goodlands,59204514,19/10/2009,Part-Time
+139,Rajeev Rungasamy,Beau Bassin,58162515,18/9/2002,Full-Time
+140,Rohini Beekharry,Baie du Tombeau,51013386,18/7/2018,Full-Time
+141,Harsha Ramchurn,Bel Air,57364325,16/12/2021,Part-Time
+142,Ishan Ramchunder,Beau Bassin,53323934,3/7/2000,Part-Time
+143,Nilesh Gopauloo,Port Louis,56430874,18/12/2005,Full-Time
+144,Divya Bissessur,Albion,52935890,10/7/2010,Part-Time
+145,Jasmine Lutchmun,Piton,57011166,6/12/2021,Part-Time
+146,Nilesh Jeebun,Black River,57694951,14/5/2008,Part-Time
+147,Ananya Bhujun,Flic en Flac,53106627,4/4/2015,Part-Time
+148,Arjun Tandrayen,Bel Air,55388744,1/2/2000,Part-Time
+149,Jatin Gokhool,Vacoas,59091236,21/7/2007,Part-Time
+150,Geeta Ravina,Bel Air,59330328,11/3/2014,Full-Time
+151,Anupam Bhagwandeen,Vacoas,51574100,13/9/2005,Part-Time
+152,Vinay Seeborun,Souillac,56582161,18/11/2000,Part-Time
+153,Disha Sobhee,Roches Noires,54302305,9/11/2009,Full-Time
+154,Neha Seewoosagur,Riviere du Rempart,56323716,25/7/2023,Full-Time
+155,Reshma Tandrayen,Rose Hill,59596166,23/11/2007,Full-Time
+156,Tanya Sooreea,Curepipe,51628184,7/3/2017,Part-Time
+157,Umesh Daby,Flic en Flac,57865303,8/1/2018,Full-Time
+158,Darshan Hurchurn,Grand Baie,59458618,20/1/2022,Full-Time
+159,Vikas Sungkur,Mahébourg,53318513,27/10/2020,Full-Time
+160,Bhavesh Jeetun,Roches Noires,56472552,21/1/2019,Part-Time
+161,Tanya Nagappa,Baie du Tombeau,55075736,11/11/2024,Full-Time
+162,Aarya Beekharry,Chamarel,57678927,6/10/2023,Part-Time
+163,Rhea Sunassee,Goodlands,52978800,7/6/2012,Full-Time
+164,Asha Sookun,Goodlands,53598738,18/4/2014,Part-Time
+165,Deepak Hurchand,Triolet,55770350,18/8/2011,Part-Time
+166,Sumit Boodia,Vacoas,54859540,14/4/2014,Part-Time
+167,Rakesh Boodhoo,Chemin Grenier,59230522,25/4/2017,Full-Time
+168,Divya Moosun,Goodlands,52868419,28/4/2024,Part-Time
+169,Asha Seeborun,Beau Bassin,59007743,27/9/2015,Full-Time
+170,Kiran Ravina,Triolet,54113967,21/3/2000,Full-Time
+171,Vinay Gokhool,Piton,59069568,17/1/2011,Full-Time
+172,Suresh Aumeer,Goodlands,56214052,10/2/2015,Part-Time
+173,Krishna Bheekhun,Moka,56261059,14/2/2001,Full-Time
+174,Nikhil Sunassee,Mahébourg,58461724,22/3/2017,Full-Time
+175,Rohini Sooreea,Vacoas,56851815,17/3/2008,Part-Time
+176,Jayesh Tandrayen,Baie du Tombeau,51560456,8/1/2017,Part-Time
+177,Anjali Lutchmun,Triolet,55530272,18/12/2010,Part-Time
+178,Jasmine Sookun,Goodlands,56936736,11/1/2009,Full-Time
+179,Nikita Ramchurn,Quatre Bornes,55265384,4/5/2023,Part-Time
+180,Pranav Nuckchady,Grand Baie,51353582,28/9/2009,Full-Time
+181,Zeenat Bungaroo,Baie du Tombeau,57094329,27/8/2002,Part-Time
+182,Pooja Beekharry,Goodlands,52460586,15/9/2011,Part-Time
+183,Pranav Ramnauth,Chamarel,58448158,26/4/2023,Part-Time
+184,Amit Gujadhur,Albion,51274665,9/12/2020,Full-Time
+185,Jatin Bheekhun,Baie du Tombeau,59321594,21/12/2022,Part-Time
+186,Sharanya Bissessur,Tamarin,53698998,16/12/2013,Full-Time
+187,Ishita Jodhun,Chamarel,53908488,5/4/2006,Full-Time
+188,Kiran Dabee,Souillac,56869844,16/11/2023,Part-Time
+189,Keshav Mootoosamy,Port Louis,56423453,21/8/2013,Part-Time
+190,Amit Ramchurn,Curepipe,59366247,11/7/2005,Part-Time
+191,Sharanya Mootoosamy,Chamarel,53390851,4/9/2006,Part-Time
+192,Arvind Kessuram,Rose Hill,58103071,15/9/2025,Full-Time
+193,Anupam Vandapool,Moka,54829841,12/4/2000,Full-Time
+194,Viveka Soondrum,Mahébourg,53362732,20/4/2004,Full-Time
+195,Parveen Bodha,Petit Raffray,53206495,26/5/2019,Full-Time
+196,Sneha Sunassee,Chamarel,56301842,5/5/2021,Part-Time
+197,Pooja Ramasawmy,Chemin Grenier,56021568,12/7/2022,Part-Time
+198,Eshan Nagowah,Chamarel,57995112,20/9/2005,Part-Time
+199,Vikas Gujadhur,Triolet,53836708,28/3/2024,Part-Time
+200,Reshma Bissessur,Phoenix,57527235,10/12/2017,Part-Time
+201,Asha Moosun,Mahébourg,59524510,5/12/2012,Full-Time
+202,Sarita Nuckchady,Phoenix,57059446,28/5/2019,Full-Time
+203,Chirag Mootoosamy,Le Morne,58080816,20/12/2007,Part-Time
+204,Harsha Rama,Le Morne,56398973,3/12/2018,Part-Time
+205,Deepak Ramchurn,Phoenix,52889516,9/10/2019,Part-Time
+206,Vivek Ramnauth,Mahébourg,58040374,20/5/2014,Full-Time
+207,Prakash Mahadeo,Beau Bassin,59968211,10/7/2017,Part-Time
+208,Meena Nagowah,Goodlands,55154561,10/5/2010,Part-Time
+209,Tushar Gunness,Mahébourg,53739040,6/6/2021,Part-Time
+210,Sneha Jankee,Curepipe,54388594,18/6/2009,Part-Time
+211,Rohit Sobhee,Riviere du Rempart,57970474,2/10/2016,Full-Time
+212,Siddharth Gunness,Moka,58873228,3/6/2001,Part-Time
+213,Ravi Soondrum,Phoenix,58324357,14/6/2018,Part-Time
+214,Rajendra Tandrayen,Rose Hill,57016685,11/1/2012,Part-Time
+215,Aarav Pather,Flic en Flac,58271153,24/4/2019,Part-Time
+216,Mira Ramphool,Pamplemousses,57114687,15/2/2015,Part-Time
+217,Viveka Seewooboodhul,Terre Rouge,58004372,9/6/2014,Part-Time
+218,Pooja Mungly,Curepipe,53890193,1/1/2016,Full-Time
+219,Divya Beekharry,Le Morne,56545481,20/4/2007,Full-Time
+220,Amrita Tandrayen,Riviere du Rempart,59281734,18/1/2020,Full-Time
+221,Jatin Mangat,Le Morne,57288697,14/6/2009,Full-Time
+222,Aisha Rungasamy,Le Morne,57134309,12/1/2005,Full-Time
+223,Aryan Daby,Triolet,56982818,7/1/2012,Full-Time
+224,Ishita Dabee,Port Louis,53996441,23/2/2023,Full-Time
+225,Shreya Gopauloo,Vacoas,54125822,21/4/2019,Full-Time
+226,Divya Ravina,Roches Noires,52938835,3/10/2020,Full-Time
+227,Anupam Sunassee,Goodlands,54528840,23/7/2001,Full-Time
+228,Aisha Gunness,Chemin Grenier,58267477,9/1/2005,Full-Time
+229,Mira Sunassee,Chamarel,54062218,13/7/2010,Part-Time
+230,Namrata Dabee,Pamplemousses,54930796,17/8/2000,Full-Time
+231,Suraj Neermul,Terre Rouge,57449439,4/5/2016,Full-Time
+232,Manish Mootoosamy,Quatre Bornes,57671604,12/8/2024,Full-Time
+233,Vivek Nuckchady,Quatre Bornes,51146750,20/6/2001,Full-Time
+234,Yash Daby,Piton,57325204,5/10/2024,Part-Time
+235,Akshay Ramsamy,Petit Raffray,54387873,8/7/2025,Full-Time
+236,Sneha Bissessur,Pamplemousses,59824146,24/1/2004,Part-Time
+237,Umesh Mungly,Curepipe,55204689,7/4/2004,Part-Time
+238,Aarav Nurseemul,Mahébourg,55225389,28/11/2004,Part-Time
+239,Jasmine Ravina,Triolet,53373634,27/9/2002,Part-Time
+240,Saurabh Beekharry,Riviere du Rempart,57948295,28/12/2021,Part-Time
+241,Puneet Ravina,Vacoas,58969156,4/11/2012,Part-Time
+242,Tanisha Sunassee,Piton,55693761,17/11/2021,Full-Time
+243,Chirag Dabee,Quatre Bornes,56472847,8/12/2000,Part-Time
+244,Pooja Bhagwandeen,Mahébourg,57353584,16/2/2025,Full-Time
+245,Saurabh Teeluck,Triolet,58543001,23/4/2014,Full-Time
+246,Divya Joganah,Pamplemousses,53133049,24/1/2013,Full-Time
+247,Neha Moosun,Vacoas,55966136,17/5/2003,Part-Time
+248,Harsha Sunassee,Pamplemousses,52999534,13/5/2005,Part-Time
+249,Madhavi Vandapool,Baie du Tombeau,59520591,20/5/2022,Full-Time
+250,Krishna Ramsamy,Mahébourg,58174145,21/1/2000,Part-Time
+251,Gautam Shivam,Piton,57166003,11/8/2008,Full-Time
+252,Asha Mawjee,Curepipe,53180183,25/5/2013,Full-Time
+253,Rajeev Pather,Terre Rouge,53577951,10/6/2001,Part-Time
+254,Chandni Ravina,Mahébourg,57257823,18/2/2002,Part-Time
+255,Rajeev Madhow,Goodlands,59693065,23/6/2018,Full-Time
+256,Parveen Kistnen,Goodlands,54088550,20/4/2019,Full-Time
+257,Kiran Bhagwandeen,Souillac,56921108,24/2/2002,Full-Time
+258,Sumit Vandapool,Chemin Grenier,59667075,8/10/2025,Full-Time
+259,Roshni Joganah,Baie du Tombeau,56395058,9/4/2022,Part-Time
+260,Karan Teeluck,Souillac,55804872,1/5/2024,Part-Time
+261,Tushar Hurchurn,Chamarel,53149291,17/10/2012,Part-Time
+262,Vinay Sobhee,Le Morne,59404801,23/7/2015,Full-Time
+263,Keshav Dabee,Grand Baie,53003538,26/3/2011,Full-Time
+264,Reshma Gopauloo,Rose Hill,53547573,9/8/2017,Part-Time
+265,Arjun Shivam,Petit Raffray,51495655,28/10/2005,Part-Time
+266,Reshma Nuckchady,Flic en Flac,55821297,2/11/2013,Full-Time
+267,Sarita Beekharry,Port Louis,55459481,11/8/2002,Part-Time
+268,Dev Luchmun,Chamarel,58380434,13/10/2010,Part-Time
+269,Shreya Jeebun,Flacq,58460525,27/1/2001,Full-Time
+270,Suraj Kistnen,Beau Bassin,54193997,1/3/2016,Part-Time
+271,Bharat Luchmun,Vacoas,52264531,11/8/2020,Full-Time
+272,Nikita Nagappa,Port Louis,52730369,19/11/2023,Part-Time
+273,Sarita Dabee,Triolet,58363641,14/5/2008,Part-Time
+274,Sandeep Hurchurn,Chamarel,53108553,2/5/2001,Part-Time
+275,Zoya Mahadeo,Rose Hill,54087097,20/6/2013,Full-Time
+276,Tanisha Kistnen,Black River,58377140,23/4/2002,Full-Time
+277,Darshan Luchmun,Mahébourg,56349213,20/10/2022,Part-Time
+278,Tanisha Jeebun,Tamarin,52197148,1/6/2022,Part-Time
+279,Rakesh Kessuram,Petit Raffray,58116554,21/6/2008,Full-Time
+280,Tushar Ramnauth,Phoenix,57003020,17/3/2015,Part-Time
+281,Bina Nundlall,Rose Hill,56413831,23/10/2005,Part-Time
+282,Chirag Mahadeo,Goodlands,58403040,18/3/2002,Part-Time
+283,Tanisha Nundlall,Mahébourg,56265690,23/2/2015,Part-Time
+284,Aarya Ramtohul,Riviere du Rempart,56076250,20/12/2003,Full-Time
+285,Manish Nurseemul,Grand Baie,51841859,24/11/2007,Full-Time
+286,Rakesh Sawmynaden,Moka,53155154,5/11/2021,Part-Time
+287,Roshni Dabee,Triolet,53718677,13/7/2011,Part-Time
+288,Rakesh Madhow,Grand Baie,52151421,14/6/2000,Part-Time
+289,Disha Nagowah,Quatre Bornes,51053008,6/12/2008,Part-Time
+290,Vivek Bhujun,Quatre Bornes,51609359,14/7/2011,Part-Time
+291,Aarav Mungur,Albion,59801845,15/4/2006,Full-Time
+292,Hemali Dabee,Terre Rouge,55859147,27/5/2021,Part-Time
+293,Nilesh Bodha,Vacoas,52912574,7/10/2016,Full-Time
+294,Namrata Kistnen,Petit Raffray,51698080,1/12/2008,Full-Time
+295,Nilesh Joganah,Triolet,57358288,28/6/2003,Full-Time
+296,Yamini Puttee,Port Louis,53317821,20/2/2002,Full-Time
+297,Akshay Madhow,Goodlands,56457412,20/12/2025,Full-Time
+298,Jatin Nagowah,Beau Bassin,51899459,17/1/2021,Full-Time
+299,Rachit Beekharry,Piton,53826414,27/11/2024,Full-Time
+300,Rajeev Seeboruth,Petit Raffray,56641679,2/3/2003,Part-Time
+301,Zoya Seewooboodhul,Petit Raffray,52329229,14/3/2007,Full-Time
+302,Anupam Moutou,Baie du Tombeau,51292385,1/10/2025,Full-Time
+303,Yash Vandapool,Goodlands,54052746,9/8/2021,Full-Time
+304,Rachit Bheemul,Moka,55857358,13/10/2017,Part-Time
+305,Aisha Beekharry,Vacoas,52674849,10/4/2009,Part-Time
+306,Rakesh Kistnen,Vacoas,51560410,19/6/2023,Part-Time
+307,Vivek Shivam,Black River,56097548,5/1/2019,Full-Time
+308,Vivek Seeborun,Souillac,53298971,28/4/2023,Part-Time
+309,Umesh Jodhun,Tamarin,51171985,6/9/2019,Full-Time
+310,Lavina Beekharry,Grand Baie,56677164,17/3/2023,Full-Time
+311,Jatin Mawjee,Vacoas,58899520,12/4/2007,Part-Time
+312,Disha Bhujoharry,Mahébourg,54955432,24/2/2007,Part-Time
+313,Zeenat Nagappa,Baie du Tombeau,57268275,28/12/2001,Full-Time
+314,Mira Gayan,Chamarel,56523922,27/5/2000,Full-Time
+315,Bharat Mahadeo,Flic en Flac,53753076,16/2/2021,Part-Time
+316,Amrita Ramsamy,Curepipe,56654837,22/6/2025,Full-Time
+317,Rakesh Rungasamy,Piton,56986724,28/12/2001,Full-Time
+318,Zoya Ramchurn,Tamarin,54345511,27/9/2002,Full-Time
+319,Vandana Beekharry,Goodlands,56745619,5/5/2023,Full-Time
+320,Sumit Ghoorbin,Terre Rouge,52968599,3/10/2025,Full-Time
+321,Anjali Teeluck,Bel Air,54034565,28/11/2003,Part-Time
+322,Yamini Daby,Albion,53086500,3/11/2009,Full-Time
+323,Chirag Beekharry,Tamarin,55847387,27/7/2024,Part-Time
+324,Meena Bissoondoyal,Pamplemousses,54030989,14/10/2001,Full-Time
+325,Puneet Moutou,Chamarel,52334954,23/5/2021,Part-Time
+326,Ananya Nagowah,Moka,52715858,19/8/2002,Full-Time
+327,Ishan Nurseemul,Pamplemousses,55033389,19/10/2001,Full-Time
+328,Disha Jankee,Bel Air,55250085,21/5/2008,Part-Time
+329,Saurabh Kessuram,Moka,53952968,7/8/2008,Full-Time
+330,Aryan Moosun,Mahébourg,54920039,12/9/2011,Part-Time
+331,Parveen Mawjee,Rose Hill,57649243,4/2/2015,Full-Time
+332,Arvind Persand,Le Morne,53963126,20/5/2009,Full-Time
+333,Ananya Kistnen,Mahébourg,51657861,2/6/2019,Part-Time
+334,Yash Bhagwandeen,Quatre Bornes,55196533,1/9/2023,Part-Time
+335,Rohit Ramchunder,Moka,55458212,18/8/2013,Full-Time
+336,Jatin Joganah,Mahébourg,56269823,27/10/2008,Full-Time
+337,Sakshi Seeborun,Le Morne,56053864,3/8/2023,Part-Time
+338,Nandini Jodhun,Vacoas,59130422,7/5/2015,Part-Time
+339,Namrata Sookun,Goodlands,59505279,1/11/2012,Part-Time
+340,Bhavesh Bhagwandeen,Baie du Tombeau,51887426,23/12/2021,Full-Time
+341,Kavita Bissoondoyal,Chemin Grenier,51749964,22/7/2000,Full-Time
+342,Umesh Nuckchady,Riviere du Rempart,51050826,9/9/2013,Full-Time
+343,Jayesh Mahadeo,Quatre Bornes,51515272,25/4/2012,Full-Time
+344,Tushar Ramasawmy,Flacq,54885671,14/10/2005,Part-Time
+345,Ishan Nundlall,Chemin Grenier,54192369,5/3/2011,Full-Time
+346,Jatin Sunassee,Flacq,53860457,20/12/2020,Full-Time
+347,Viveka Gokhool,Roches Noires,59051801,1/10/2010,Part-Time
+348,Reshma Ramchurn,Curepipe,52716410,4/11/2016,Part-Time
+349,Deepak Luchmun,Souillac,55329465,4/6/2007,Full-Time
+350,Aryan Ramsamy,Bel Air,56129901,7/11/2003,Full-Time
+351,Geeta Beekharry,Albion,56507288,28/4/2012,Part-Time
+352,Rakesh Bodha,Tamarin,52959057,8/5/2007,Full-Time
+353,Chirag Boodhoo,Roches Noires,57673155,16/9/2006,Part-Time
+354,Chirag Ramphul,Black River,54652253,23/3/2008,Full-Time
+355,Darshan Ramchunder,Chamarel,55763106,20/12/2005,Part-Time
+356,Siddharth Tandrayen,Souillac,53287975,13/5/2020,Part-Time
+357,Bhavesh Mungur,Petit Raffray,56738556,24/4/2001,Part-Time
+358,Siddharth Ramchunder,Beau Bassin,58145525,25/3/2003,Full-Time
+359,Jayesh Ramnauth,Terre Rouge,56380249,18/1/2015,Full-Time
+360,Ravi Ramchunder,Piton,58713193,5/8/2011,Part-Time
+361,Akshay Joganah,Port Louis,53048817,14/10/2018,Full-Time
+362,Arvind Dabee,Riviere du Rempart,55473322,21/4/2025,Part-Time
+363,Jatin Joganah,Pamplemousses,56975490,18/3/2004,Full-Time
+364,Lavina Shivam,Chamarel,51916597,13/1/2014,Full-Time
+365,Harsha Seewoosagur,Beau Bassin,54376461,2/5/2011,Part-Time
+366,Saurabh Lutchmun,Flacq,51831218,18/10/2008,Part-Time
+367,Aarya Shivam,Souillac,56959393,19/9/2014,Full-Time
+368,Kavya Vencatachellum,Quatre Bornes,53085425,18/4/2004,Full-Time
+369,Nilesh Neermul,Piton,54032613,12/5/2018,Full-Time
+370,Roshni Boodia,Rose Hill,51367120,13/3/2016,Part-Time
+371,Geeta Nuckchady,Black River,52797426,9/1/2004,Full-Time
+372,Siddharth Nundlall,Tamarin,55824381,10/5/2024,Full-Time
+373,Sandeep Kistnen,Chamarel,55728608,5/10/2013,Part-Time
+374,Rajeev Mungly,Flacq,53569843,1/5/2010,Full-Time
+375,Sakshi Kessuram,Port Louis,54123716,23/12/2002,Full-Time
+376,Vivek Mangat,Rose Hill,57831009,24/3/2008,Part-Time
+377,Sakshi Bhagwandeen,Moka,51855742,2/12/2004,Part-Time
+378,Suraj Seetohul,Albion,51159593,7/12/2020,Full-Time
+379,Darshan Hurrynag,Flic en Flac,56043707,1/6/2002,Part-Time
+380,Reyansh Mohabeer,Flacq,53073013,5/11/2022,Part-Time
+381,Mira Rungasamy,Flacq,56282531,10/2/2025,Full-Time
+382,Anjali Nuckchady,Bel Air,58456338,21/10/2010,Part-Time
+383,Lavina Hurchurn,Moka,57715198,4/11/2004,Full-Time
+384,Sarita Hurrynag,Beau Bassin,54575274,21/9/2018,Full-Time
+385,Asha Kessuram,Chamarel,58484593,18/7/2024,Part-Time
+386,Manish Hurchand,Quatre Bornes,56116636,26/9/2005,Part-Time
+387,Vandana Ramchunder,Riviere du Rempart,56400339,4/9/2016,Part-Time
+388,Sarita Vencatachellum,Terre Rouge,53078139,24/5/2021,Part-Time
+389,Nikita Gopaul,Piton,57019772,7/4/2014,Part-Time
+390,Vikas Mangat,Tamarin,51842432,19/8/2017,Full-Time
+391,Kiran Gayan,Terre Rouge,53055581,4/2/2012,Part-Time
+392,Zoya Bhagwandeen,Pamplemousses,59906259,21/7/2001,Part-Time
+393,Roshni Parmessur,Mahébourg,51314005,4/12/2023,Part-Time
+394,Harsha Luchmun,Chamarel,53255184,6/10/2008,Part-Time
+395,Sharanya Kistnen,Petit Raffray,58406804,19/2/2012,Part-Time
+396,Rajendra Ramphool,Port Louis,59502979,15/1/2004,Full-Time
+397,Anupam Ramchurn,Chamarel,52065685,3/11/2022,Full-Time
+398,Ishita Nundlall,Moka,52245277,6/10/2011,Part-Time
+399,Rachit Sunassee,Pamplemousses,51592202,23/2/2025,Full-Time
+400,Harsha Boodhoo,Le Morne,59157966,26/2/2005,Part-Time
+401,Tanisha Nagappa,Rose Hill,56051375,12/4/2003,Part-Time
+402,Zoya Mangat,Terre Rouge,59312128,3/8/2008,Part-Time
+403,Geeta Bhujun,Terre Rouge,58496267,19/4/2008,Full-Time
+404,Jayesh Ramsamy,Curepipe,56966422,13/6/2000,Part-Time
+405,Jatin Sookun,Curepipe,53929375,19/4/2009,Full-Time
+406,Geeta Teeluck,Chemin Grenier,56970726,11/10/2003,Part-Time
+407,Aarya Gujadhur,Flacq,52239558,23/8/2008,Part-Time
+408,Harsha Hurrynag,Vacoas,54047034,16/3/2017,Part-Time
+409,Neha Jhamat,Albion,54033043,15/11/2013,Full-Time
+410,Tanya Gopaul,Roches Noires,52073563,3/5/2001,Part-Time
+411,Shreya Bheemul,Baie du Tombeau,55480271,13/1/2006,Part-Time
+412,Nikhil Seewooboodhul,Chemin Grenier,58760391,7/1/2003,Part-Time
+413,Namrata Nundlall,Mahébourg,59579739,17/1/2025,Part-Time
+414,Bhavesh Jankee,Moka,58339132,23/11/2017,Full-Time
+415,Vidya Mohabeer,Moka,56158116,16/4/2002,Part-Time
+416,Tanya Hurchurn,Piton,56242235,23/8/2021,Part-Time
+417,Suraj Joganah,Flic en Flac,58475427,2/5/2020,Part-Time
+418,Aarya Seewoosagur,Grand Baie,54279139,14/10/2018,Part-Time
+419,Namrata Seewooboodhul,Piton,53532533,14/6/2010,Full-Time
+420,Vivek Soondrum,Le Morne,52589476,24/7/2005,Full-Time
+421,Jatin Mahadeo,Baie du Tombeau,55961738,4/6/2011,Full-Time
+422,Vidya Bhujun,Chemin Grenier,59606063,1/1/2006,Part-Time
+423,Karan Nagowah,Riviere du Rempart,53946991,24/3/2002,Part-Time
+424,Karan Sookun,Tamarin,51442633,26/7/2004,Part-Time
+425,Siddharth Nuckchady,Goodlands,54380002,1/1/2015,Part-Time
+426,Suresh Gopauloo,Le Morne,53391076,6/5/2003,Full-Time
+427,Eshan Kistnen,Albion,55991717,25/5/2018,Full-Time
+428,Kavya Boodhun,Albion,55585774,5/8/2015,Full-Time
+429,Vidya Luchmun,Vacoas,56889874,28/5/2012,Part-Time
+430,Yamini Sawmynaden,Souillac,59087506,8/10/2018,Part-Time
+431,Hemali Dabee,Quatre Bornes,53012755,25/12/2009,Full-Time
+432,Siddharth Gujadhur,Mahébourg,58206539,10/4/2003,Full-Time
+433,Manish Beekharry,Rose Hill,52092610,2/2/2013,Full-Time
+434,Pranav Tandrayen,Chemin Grenier,53156292,13/7/2006,Full-Time
+435,Anupam Hurrynag,Moka,53089621,3/3/2015,Full-Time
+436,Arvind Nurseemul,Pamplemousses,55216585,28/4/2015,Full-Time
+437,Suraj Kistnen,Souillac,54866252,25/2/2014,Full-Time
+438,Aisha Boodhun,Black River,55960548,19/8/2009,Part-Time
+439,Sneha Mahadeo,Souillac,57906333,23/12/2013,Full-Time
+440,Kavita Joganah,Rose Hill,54480534,6/8/2020,Part-Time
+441,Jaya Shivam,Bel Air,59983741,17/1/2005,Part-Time
+442,Vinay Ramtohul,Souillac,51427516,11/10/2014,Part-Time
+443,Geeta Bheekhun,Piton,58241584,11/2/2006,Part-Time
+444,Jaya Gunness,Black River,54094547,17/7/2010,Part-Time
+445,Rajendra Seeboruth,Moka,56716254,2/9/2010,Part-Time
+446,Krishna Ramsamy,Le Morne,58927812,13/11/2019,Full-Time
+447,Suresh Seetohul,Triolet,55753448,15/8/2001,Part-Time
+448,Viveka Kessuram,Flacq,51997478,9/4/2020,Full-Time
+449,Zeenat Sunassee,Moka,53203675,9/5/2022,Full-Time
+450,Umesh Puttee,Triolet,56305262,21/6/2016,Part-Time
+451,Kavita Ramtohul,Flic en Flac,51459173,28/1/2013,Part-Time
+452,Aarya Soondrum,Tamarin,54188077,19/12/2016,Full-Time
+453,Rachit Ramchunder,Chemin Grenier,57119387,13/11/2023,Part-Time
+454,Bina Bhagwandeen,Le Morne,57402125,15/2/2017,Full-Time
+455,Hemali Mahadeo,Le Morne,51960109,28/5/2018,Full-Time
+456,Neha Nagowah,Black River,57152804,17/2/2016,Part-Time
+457,Aarya Gunness,Grand Baie,53748517,17/6/2023,Full-Time
+458,Ravi Mohabeer,Chamarel,54171894,1/2/2011,Full-Time
+459,Madhavi Joganah,Mahébourg,59079482,25/12/2014,Full-Time
+460,Shreya Bheemul,Le Morne,57301034,28/3/2000,Part-Time
+461,Preeti Kistnen,Vacoas,58376961,18/8/2013,Full-Time
+462,Zoya Neermul,Rose Hill,58271405,5/11/2015,Part-Time
+463,Rakesh Kistnen,Chemin Grenier,53566837,14/5/2009,Full-Time
+464,Kiran Jodhun,Mahébourg,56270495,14/12/2019,Part-Time
+465,Ananya Mangat,Riviere du Rempart,52436295,13/8/2012,Full-Time
+466,Disha Sawmynaden,Terre Rouge,53264699,5/5/2020,Part-Time
+467,Lavina Bheekhun,Phoenix,54082823,26/10/2024,Part-Time
+468,Krishna Moosun,Flacq,57724600,3/5/2004,Part-Time
+469,Tanya Bheekhun,Beau Bassin,59292928,25/8/2025,Full-Time
+470,Viveka Sunassee,Souillac,55919090,15/12/2000,Full-Time
+471,Asha Bhagwandeen,Piton,57853471,19/1/2023,Part-Time
+472,Sumit Bungaroo,Phoenix,51580137,18/3/2014,Part-Time
+473,Vikas Ramtohul,Quatre Bornes,52069788,4/7/2007,Part-Time
+474,Zoya Sungkur,Moka,52625210,11/3/2008,Part-Time
+475,Rachit Boodhun,Pamplemousses,54941191,8/4/2024,Part-Time
+476,Jaya Ramphool,Petit Raffray,58125569,4/10/2016,Full-Time
+477,Amrita Nuckchady,Riviere du Rempart,53908254,18/2/2011,Full-Time
+478,Asha Beekharry,Goodlands,53934523,14/11/2001,Full-Time
+479,Namrata Nundlall,Albion,56099141,17/2/2007,Part-Time
+480,Namrata Dabee,Goodlands,56636136,4/12/2000,Full-Time
+481,Hemali Dabee,Chamarel,55063580,23/12/2023,Full-Time
+482,Sandeep Ramphul,Pamplemousses,53498133,14/2/2014,Part-Time
+483,Eshan Mawjee,Beau Bassin,55400850,19/10/2003,Part-Time
+484,Krishna Ramtohul,Mahébourg,51439394,18/7/2003,Part-Time
+485,Chirag Hurchurn,Grand Baie,52892785,26/6/2007,Full-Time
+486,Karan Mangat,Souillac,59158958,18/6/2022,Part-Time
+487,Hemali Jeebun,Grand Baie,53002007,3/4/2001,Full-Time
+488,Jayesh Nuckchady,Roches Noires,52758533,12/11/2017,Part-Time
+489,Viveka Gujadhur,Bel Air,59654201,5/8/2015,Part-Time
+490,Jayesh Ramnauth,Triolet,57790585,20/9/2001,Full-Time
+491,Aryan Bhagwandeen,Grand Baie,58879792,22/6/2010,Part-Time
+492,Vivek Moutou,Pamplemousses,54155120,6/1/2007,Full-Time
+493,Umesh Sobhee,Baie du Tombeau,58736669,26/1/2005,Full-Time
+494,Anupam Gokhool,Phoenix,57616182,10/7/2006,Full-Time
+495,Reshma Persand,Black River,59546961,15/10/2013,Part-Time
+496,Arjun Nurseemul,Flacq,53981083,13/6/2016,Part-Time
+497,Parveen Gayan,Bel Air,51226257,15/8/2005,Full-Time
+498,Nilesh Sooreea,Mahébourg,53573833,21/3/2002,Part-Time
+499,Aryan Bhujoharry,Curepipe,59304378,14/4/2010,Part-Time
+500,Aarya Puttee,Albion,59118699,24/6/2006,Full-Time
+501,Umesh Boodhoo,Piton,54428615,25/2/2004,Full-Time
+502,Amrita Vandapool,Albion,56227433,8/11/2018,Part-Time
+503,Tanya Nundlall,Moka,52497446,27/8/2003,Full-Time
+504,Kavita Bissessur,Grand Baie,57706573,8/10/2001,Full-Time
+505,Yash Puttee,Grand Baie,51914194,18/7/2014,Full-Time
+506,Nikhil Persand,Black River,55642055,11/5/2018,Part-Time
+507,Kavita Nuckchady,Pamplemousses,56838349,6/2/2003,Part-Time
+508,Meena Gayan,Le Morne,56024413,7/6/2015,Full-Time
+509,Vandana Sookun,Flacq,59857248,16/7/2019,Part-Time
+510,Alok Luchmun,Souillac,58322059,1/5/2009,Full-Time
+511,Aarya Joganah,Moka,59573712,22/8/2004,Part-Time
+512,Amit Sawmynaden,Piton,57261401,13/4/2007,Full-Time
+513,Sharanya Kistnen,Rose Hill,57894160,4/1/2009,Part-Time
+514,Alok Sunassee,Beau Bassin,53472657,8/9/2018,Full-Time
+515,Vinay Soondrum,Baie du Tombeau,52069008,8/5/2006,Full-Time
+516,Ishan Nuckchady,Petit Raffray,51170789,23/8/2018,Full-Time
+517,Reyansh Nagowah,Terre Rouge,55883851,4/8/2004,Part-Time
+518,Sarita Ramasawmy,Quatre Bornes,51607212,24/10/2007,Part-Time
+519,Rakesh Vencatachellum,Bel Air,57698687,27/3/2005,Part-Time
+520,Aryan Soondrum,Vacoas,59681363,11/4/2013,Part-Time
+521,Alok Mahadeo,Quatre Bornes,57080349,9/9/2021,Full-Time
+522,Ananya Mungur,Baie du Tombeau,59887745,25/3/2012,Part-Time
+523,Bharat Pillay,Albion,53511495,8/10/2005,Part-Time
+524,Geeta Bissessur,Baie du Tombeau,53216238,28/8/2024,Part-Time
+525,Jayesh Bheekhun,Rose Hill,54682931,19/4/2004,Full-Time
+526,Eshan Mohabeer,Souillac,53739377,10/8/2008,Part-Time
+527,Sakshi Luchmun,Curepipe,51635962,17/4/2007,Part-Time
+528,Vinay Hurrynag,Triolet,56297748,14/5/2021,Full-Time
+529,Rakesh Sunassee,Moka,57064574,23/6/2021,Part-Time
+530,Vandana Nuckchady,Mahébourg,58793579,27/7/2018,Full-Time
+531,Rachit Dabee,Terre Rouge,59063012,3/3/2019,Part-Time
+532,Suresh Nuckchady,Flacq,53436407,22/12/2008,Part-Time
+533,Aarya Nuckchady,Baie du Tombeau,53916601,16/9/2014,Part-Time
+534,Sneha Nuckchady,Goodlands,56996796,11/1/2022,Part-Time
+535,Jasmine Ramasawmy,Mahébourg,59206247,27/1/2021,Full-Time
+536,Kavita Parmessur,Triolet,54347318,17/2/2022,Part-Time
+537,Rhea Seeborun,Petit Raffray,54073318,27/3/2004,Full-Time
+538,Bhavesh Rungasamy,Chamarel,59889087,8/1/2006,Full-Time
+539,Nandini Bheemul,Souillac,51710947,16/8/2018,Full-Time
+540,Ananya Sookun,Bel Air,54788159,7/8/2014,Part-Time
+541,Vivek Boodhoo,Rose Hill,52186396,10/3/2025,Part-Time
+542,Amit Kistnen,Riviere du Rempart,52865961,27/3/2019,Full-Time
+543,Bharat Boodhoo,Port Louis,57295986,25/9/2004,Part-Time
+544,Manish Seewooboodhul,Tamarin,54152284,19/7/2023,Full-Time
+545,Sakshi Pillay,Souillac,59423496,12/6/2025,Part-Time
+546,Sharanya Mungly,Phoenix,59393223,11/12/2023,Full-Time
+547,Aryan Dabee,Tamarin,53087854,24/7/2018,Part-Time
+548,Saurabh Gujadhur,Curepipe,56842760,4/4/2017,Part-Time
+549,Aarya Neermul,Pamplemousses,55148145,10/10/2012,Part-Time
+550,Eshan Mootoosamy,Grand Baie,59543926,5/7/2013,Full-Time
+551,Alok Jodhun,Terre Rouge,58176479,4/2/2012,Full-Time
+552,Amrita Ramtohul,Riviere du Rempart,57459585,1/10/2002,Full-Time
+553,Sharanya Sobhee,Piton,59990827,2/1/2019,Full-Time
+554,Kiran Pather,Chamarel,52584382,23/5/2013,Full-Time
+555,Prakash Persand,Piton,55903333,10/5/2006,Full-Time
+556,Jatin Ramchurn,Quatre Bornes,57152359,20/9/2017,Full-Time
+557,Aarya Sunassee,Grand Baie,51511732,26/1/2014,Part-Time
+558,Preeti Nundlall,Flic en Flac,55566945,12/12/2004,Full-Time
+559,Sakshi Vandapool,Rose Hill,57932865,5/12/2015,Full-Time
+560,Reshma Vencatachellum,Terre Rouge,51571164,13/6/2025,Part-Time
+561,Madhavi Mohabeer,Vacoas,54139046,18/8/2018,Part-Time
+562,Geeta Sunassee,Triolet,59250245,3/7/2003,Part-Time
+563,Sandeep Jodhun,Quatre Bornes,51443392,22/11/2001,Full-Time
+564,Mira Boodhoo,Le Morne,53653336,19/11/2006,Part-Time
+565,Gautam Rungasamy,Port Louis,52966488,16/3/2025,Part-Time
+566,Puneet Ramphul,Port Louis,59904618,16/5/2015,Full-Time
+567,Keshav Parmessur,Goodlands,54117280,14/11/2023,Full-Time
+568,Suresh Moutou,Mahébourg,56639213,6/11/2000,Full-Time
+569,Tanya Rungasamy,Baie du Tombeau,59001827,11/3/2006,Part-Time
+570,Mira Hurchurn,Baie du Tombeau,56036697,26/5/2018,Part-Time
+571,Anjali Hurchurn,Tamarin,55387049,2/12/2009,Full-Time
+572,Nilesh Neermul,Flic en Flac,52952477,6/7/2022,Full-Time
+573,Siddharth Sunassee,Petit Raffray,56525418,22/9/2014,Full-Time
+574,Ishan Mootoosamy,Phoenix,51377958,7/3/2014,Full-Time
+575,Disha Ghoorbin,Flacq,54723740,17/6/2015,Part-Time
+576,Yamini Vencatachellum,Baie du Tombeau,51438776,17/2/2004,Part-Time
+577,Rohini Seewooboodhul,Black River,51979508,2/10/2020,Full-Time
+578,Aarya Bhujun,Beau Bassin,57882255,13/7/2005,Full-Time
+579,Rohini Bhujun,Roches Noires,58199795,24/10/2000,Part-Time
+580,Siddharth Sunassee,Tamarin,57485110,7/3/2013,Full-Time
+581,Preeti Puttee,Rose Hill,53120543,24/1/2003,Full-Time
+582,Sumit Nuckchady,Baie du Tombeau,54392011,23/8/2016,Part-Time
+583,Karan Madhow,Beau Bassin,54910048,18/8/2009,Part-Time
+584,Arvind Seewoosagur,Baie du Tombeau,56688022,3/3/2003,Part-Time
+585,Sharanya Joganah,Chamarel,57402811,20/7/2004,Full-Time
+586,Dev Sooreea,Bel Air,54765486,9/5/2017,Part-Time
+587,Alok Nurseemul,Baie du Tombeau,59986374,8/4/2016,Part-Time
+588,Puneet Kessuram,Beau Bassin,58151359,15/11/2010,Part-Time
+589,Lavina Nagappa,Flacq,54552979,18/10/2002,Full-Time
+590,Meena Mungly,Beau Bassin,59455621,19/8/2001,Full-Time
+591,Manish Boodia,Flic en Flac,51268187,16/3/2022,Full-Time
+592,Arjun Rama,Chamarel,56902495,8/4/2009,Full-Time
+593,Nandini Nurseemul,Riviere du Rempart,52728382,10/1/2004,Full-Time
+594,Jasmine Gopaul,Baie du Tombeau,58468216,27/5/2015,Part-Time
+595,Preeti Sookun,Pamplemousses,51758721,9/8/2016,Part-Time
+596,Amit Jhamat,Tamarin,54431404,8/11/2011,Full-Time
+597,Arjun Dabee,Grand Baie,57058317,27/7/2015,Part-Time
+598,Gautam Bungaroo,Curepipe,54628054,22/11/2000,Full-Time
+599,Pranav Pillay,Moka,58766285,7/11/2010,Part-Time
+600,Tanisha Ramphool,Piton,53591128,5/9/2023,Part-Time
+601,Aryan Mungly,Curepipe,59552954,3/3/2022,Part-Time
+602,Rajendra Hurrynag,Port Louis,55298000,23/4/2015,Full-Time
+603,Asha Mawjee,Chemin Grenier,53615848,2/10/2000,Part-Time
+604,Hemant Seetohul,Beau Bassin,55092191,12/2/2015,Part-Time
+605,Hemant Bhujoharry,Petit Raffray,53560894,17/8/2013,Part-Time
+606,Divya Hurrynag,Triolet,59632905,19/9/2004,Part-Time
+607,Zeenat Shivam,Phoenix,51926009,26/8/2008,Full-Time
+608,Gautam Boodhoo,Flic en Flac,55359570,7/10/2015,Part-Time
+609,Jayesh Vencatachellum,Mahébourg,52844358,21/7/2002,Part-Time
+610,Amrita Boodia,Souillac,52478935,16/9/2016,Full-Time
+611,Jaya Gujadhur,Flic en Flac,55879372,16/1/2010,Part-Time
+612,Aryan Nuckchady,Rose Hill,59501835,2/9/2015,Full-Time
+613,Jatin Nuckchady,Phoenix,51460923,4/8/2015,Part-Time
+614,Preeti Ramsamy,Flacq,51257643,21/1/2002,Part-Time
+615,Ravi Hurchand,Black River,56951024,19/9/2009,Part-Time
+616,Umesh Gayan,Chemin Grenier,55365084,24/5/2009,Part-Time
+617,Namrata Madhow,Roches Noires,58703922,26/2/2002,Part-Time
+618,Vivek Joganah,Phoenix,53476588,22/8/2023,Full-Time
+619,Amrita Lutchmun,Souillac,58845789,23/6/2009,Full-Time
+620,Ananya Bhujun,Albion,53379452,28/12/2007,Part-Time
+621,Saurabh Beekharry,Chemin Grenier,54537284,17/9/2014,Full-Time
+622,Saurabh Gopaul,Quatre Bornes,52171347,19/2/2024,Full-Time
+623,Arjun Ramnauth,Beau Bassin,54127960,27/11/2006,Full-Time
+624,Rohit Shivam,Black River,55746558,6/12/2025,Part-Time
+625,Kavita Seewoosagur,Moka,55145449,26/4/2012,Full-Time
+626,Bharat Nurseemul,Souillac,59550186,14/8/2002,Full-Time
+627,Tanisha Boodhun,Albion,51530447,8/3/2021,Part-Time
+628,Meena Seewooboodhul,Terre Rouge,56094147,17/3/2011,Part-Time
+629,Parveen Mahadeo,Tamarin,55252482,20/4/2016,Part-Time
+630,Harsha Mootoosamy,Beau Bassin,57239251,4/5/2022,Full-Time
+631,Ravi Persand,Tamarin,54400852,23/8/2012,Part-Time
+632,Jayesh Mawjee,Phoenix,52554036,13/4/2006,Part-Time
+633,Asha Mootoosamy,Pamplemousses,51525911,14/6/2020,Full-Time
+634,Arvind Bheekhun,Chemin Grenier,52146961,26/12/2024,Part-Time
+635,Akshay Mungur,Roches Noires,59711775,28/2/2023,Full-Time
+636,Aarav Sunassee,Roches Noires,51115251,18/3/2000,Full-Time
+637,Jayesh Nurseemul,Black River,51927237,19/9/2022,Part-Time
+638,Keshav Ghoorbin,Baie du Tombeau,59395885,16/11/2021,Full-Time
+639,Vandana Jeetun,Souillac,56174660,26/12/2002,Full-Time
+640,Tanisha Sookun,Rose Hill,51056074,18/6/2021,Part-Time
+641,Dev Moosun,Pamplemousses,54396986,19/7/2025,Part-Time
+642,Nikita Ramphool,Black River,51639535,16/3/2000,Part-Time
+643,Manish Mawjee,Piton,57947606,25/9/2012,Part-Time
+644,Mahesh Gayan,Moka,56227638,5/7/2011,Part-Time
+645,Ananya Ramasawmy,Petit Raffray,56365991,11/10/2000,Part-Time
+646,Nilesh Mootoosamy,Grand Baie,59673398,25/3/2006,Full-Time
+647,Sakshi Moosun,Riviere du Rempart,58685969,5/10/2020,Part-Time
+648,Pranav Bhujun,Pamplemousses,54765656,15/4/2004,Part-Time
+649,Aarya Ramphool,Moka,52606491,11/1/2015,Full-Time
+650,Alok Sunassee,Flic en Flac,56114952,27/7/2015,Full-Time
+651,Bina Hurrynag,Terre Rouge,52399975,18/7/2022,Part-Time
+652,Ajay Jodhun,Riviere du Rempart,51149804,14/3/2005,Part-Time
+653,Sandeep Mungly,Quatre Bornes,52444294,17/7/2015,Part-Time
+654,Ishan Hurchand,Chemin Grenier,57303632,27/1/2006,Part-Time
+655,Aryan Jeetun,Goodlands,57843286,9/2/2009,Full-Time
+656,Aisha Seeborun,Flacq,59678335,7/9/2003,Part-Time
+657,Jayesh Sungkur,Flacq,59706290,1/7/2025,Full-Time
+658,Rajendra Ghoorbin,Rose Hill,53692003,1/2/2014,Part-Time
+659,Bharat Sunassee,Le Morne,52702893,8/1/2024,Full-Time
+660,Akshay Bodha,Flic en Flac,59707927,15/8/2022,Full-Time
+661,Manish Bungaroo,Petit Raffray,52776200,24/4/2021,Part-Time
+662,Aarya Gayan,Goodlands,54890426,2/7/2019,Full-Time
+663,Suraj Tandrayen,Chamarel,58547718,8/6/2012,Full-Time
+664,Siddharth Sooreea,Curepipe,56370335,23/3/2011,Full-Time
+665,Nilesh Seeboruth,Grand Baie,59484716,19/4/2014,Part-Time
+666,Ravi Kistnen,Beau Bassin,52554078,11/4/2003,Part-Time
+667,Rhea Mootoosamy,Goodlands,55112338,2/1/2010,Full-Time
+668,Yash Kessuram,Black River,57765785,11/7/2025,Full-Time
+669,Ananya Kistnen,Petit Raffray,52065743,22/9/2019,Part-Time
+670,Vinay Nurseemul,Terre Rouge,51376247,25/10/2006,Part-Time
+671,Tanisha Sooreea,Phoenix,53323306,13/7/2011,Full-Time
+672,Aisha Jhamat,Petit Raffray,56616897,27/1/2025,Part-Time
+673,Lavina Bheemul,Quatre Bornes,55575503,7/10/2022,Part-Time
+674,Alok Jodhun,Port Louis,58466508,19/7/2023,Full-Time
+675,Suresh Mungur,Baie du Tombeau,53285548,18/12/2011,Full-Time
+676,Reyansh Moutou,Piton,54497429,4/3/2001,Full-Time
+677,Rajendra Nagappa,Petit Raffray,56534164,14/10/2005,Full-Time
+678,Manish Seeboruth,Albion,59969423,1/8/2021,Full-Time
+679,Eshan Puttee,Grand Baie,51348220,13/7/2001,Part-Time
+680,Vidya Jeebun,Bel Air,58243315,10/6/2010,Part-Time
+681,Asha Sobhee,Bel Air,53023354,13/8/2009,Full-Time
+682,Preeti Puttee,Flic en Flac,52789401,8/12/2013,Part-Time
+683,Rhea Sobhee,Petit Raffray,56506661,6/10/2009,Part-Time
+684,Rohit Gunness,Le Morne,58489367,10/8/2015,Part-Time
+685,Dev Gunness,Baie du Tombeau,56768577,4/2/2025,Part-Time
+686,Rajeev Bodha,Riviere du Rempart,57710001,14/8/2016,Full-Time
+687,Keshav Nuckchady,Mahébourg,57529500,3/9/2003,Part-Time
+688,Ishita Ramphool,Terre Rouge,51898268,26/9/2013,Full-Time
+689,Yash Gokhool,Mahébourg,57592868,7/12/2022,Part-Time
+690,Vidya Ramphool,Le Morne,55530757,14/7/2004,Full-Time
+691,Jaya Dabee,Chemin Grenier,56031413,2/6/2007,Part-Time
+692,Bina Mohabeer,Phoenix,55679160,25/12/2008,Full-Time
+693,Neha Tandrayen,Le Morne,54323916,19/3/2008,Part-Time
+694,Ishan Sunassee,Phoenix,59106490,16/7/2006,Full-Time
+695,Vidya Sobhee,Grand Baie,56896377,28/9/2025,Full-Time
+696,Preeti Gujadhur,Tamarin,53782527,24/5/2016,Part-Time
+697,Yash Rama,Baie du Tombeau,54885345,5/9/2015,Part-Time
+698,Amrita Ramchunder,Flacq,57831279,19/11/2000,Part-Time
+699,Roshni Gujadhur,Le Morne,56545697,14/8/2000,Full-Time
+700,Kiran Gopauloo,Bel Air,51768166,7/1/2009,Full-Time
+701,Sandeep Seewoosagur,Souillac,55812994,20/8/2018,Full-Time
+702,Lavina Parmessur,Baie du Tombeau,55902369,1/1/2023,Full-Time
+703,Aryan Boodhoo,Pamplemousses,52836752,13/4/2006,Part-Time
+704,Jasmine Dabee,Phoenix,55975751,7/1/2024,Part-Time
+705,Ishita Shivam,Roches Noires,51218719,8/1/2006,Full-Time
+706,Reyansh Moosun,Souillac,56408083,24/8/2013,Part-Time
+707,Vivek Aumeer,Phoenix,59378177,2/11/2019,Part-Time
+708,Darshan Persand,Pamplemousses,57003672,16/1/2015,Part-Time
+709,Divya Ramtohul,Port Louis,56601663,19/8/2025,Full-Time
+710,Siddharth Mungly,Pamplemousses,58914356,8/7/2003,Part-Time
+711,Eshan Seetohul,Petit Raffray,54495695,17/7/2021,Part-Time
+712,Jayesh Bhagwandeen,Goodlands,58365389,14/3/2019,Part-Time
+713,Eshan Aumeer,Vacoas,51316924,17/7/2005,Full-Time
+714,Umesh Teeluck,Petit Raffray,54069212,10/4/2014,Part-Time
+715,Ajay Beekharry,Vacoas,53190030,17/8/2001,Full-Time
+716,Madhavi Ramphool,Quatre Bornes,56920120,25/5/2016,Part-Time
+717,Amit Gujadhur,Terre Rouge,55942372,19/6/2009,Full-Time
+718,Bhavesh Pather,Rose Hill,56921364,7/6/2000,Full-Time
+719,Manish Vencatachellum,Chemin Grenier,52172282,7/4/2012,Part-Time
+720,Siddharth Jankee,Pamplemousses,55221225,4/11/2005,Full-Time
+721,Darshan Jankee,Moka,58606508,3/12/2006,Part-Time
+722,Bhavesh Gopauloo,Flacq,52109218,3/11/2010,Full-Time
+723,Divya Bheekhun,Flacq,52125499,27/11/2009,Part-Time
+724,Roshni Mootoosamy,Riviere du Rempart,55300569,26/1/2013,Part-Time
+725,Ravi Gujadhur,Chemin Grenier,54766619,13/3/2002,Part-Time
+726,Vivek Puttee,Quatre Bornes,59315775,13/6/2002,Part-Time
+727,Tushar Aumeer,Bel Air,54326809,4/6/2002,Full-Time
+728,Alok Ravina,Triolet,59577138,3/8/2002,Full-Time
+729,Kavya Jankee,Souillac,55969681,7/4/2008,Part-Time
+730,Divya Pillay,Chemin Grenier,53880563,3/6/2006,Full-Time
+731,Manish Moosun,Chemin Grenier,51213525,14/7/2005,Part-Time
+732,Eshan Joganah,Beau Bassin,56591419,17/8/2018,Part-Time
+733,Chirag Aumeer,Mahébourg,59481608,27/2/2000,Full-Time
+734,Meena Ghoorbin,Vacoas,51043761,3/11/2004,Part-Time
+735,Rhea Rama,Piton,56014357,23/11/2020,Part-Time
+736,Bharat Nundlall,Le Morne,51562267,5/7/2001,Full-Time
+737,Bhavesh Ramchunder,Moka,57045264,3/3/2006,Part-Time
+738,Siddharth Luchmun,Beau Bassin,51673553,20/1/2000,Part-Time
+739,Meena Nagowah,Beau Bassin,59047736,20/10/2001,Full-Time
+740,Chandni Sawmynaden,Port Louis,53974093,9/3/2003,Full-Time
+741,Aarya Rama,Roches Noires,58756020,20/3/2003,Full-Time
+742,Hemali Kistnen,Le Morne,58817410,18/3/2008,Part-Time
+743,Suraj Neermul,Phoenix,52107553,27/11/2005,Part-Time
+744,Ishan Boodhun,Phoenix,59788935,8/11/2023,Part-Time
+745,Dev Ramtohul,Port Louis,58790047,7/9/2014,Full-Time
+746,Prakash Persand,Flic en Flac,52958905,8/2/2012,Full-Time
+747,Umesh Madhow,Flic en Flac,54637588,22/4/2002,Part-Time
+748,Tanisha Nuckchady,Triolet,57255398,15/6/2015,Part-Time
+749,Nandini Bodha,Pamplemousses,55477639,17/6/2013,Part-Time
+750,Jasmine Pillay,Moka,54331891,23/2/2008,Full-Time
+751,Vidya Bodha,Baie du Tombeau,53376575,4/3/2015,Full-Time
+752,Sharanya Daby,Flacq,57576675,21/5/2018,Part-Time
+753,Bharat Mawjee,Rose Hill,53756068,7/12/2011,Full-Time
+754,Aryan Pillay,Souillac,58439881,15/9/2000,Part-Time
+755,Sakshi Gunness,Black River,55998492,27/2/2009,Full-Time
+756,Rachit Bhagwandeen,Bel Air,56572081,10/8/2008,Full-Time
+757,Aryan Mootoosamy,Port Louis,55335009,4/11/2013,Full-Time
+758,Keshav Bhujun,Baie du Tombeau,53267438,1/10/2003,Part-Time
+759,Zeenat Hurchand,Grand Baie,56558044,13/12/2013,Full-Time
+760,Umesh Vandapool,Piton,57808400,25/9/2021,Full-Time
+761,Vikas Aumeer,Le Morne,52228927,28/4/2005,Part-Time
+762,Geeta Sawmynaden,Port Louis,58189181,7/11/2010,Full-Time
+763,Rajendra Ramnauth,Riviere du Rempart,55762261,19/1/2012,Part-Time
+764,Anupam Sunassee,Triolet,51786264,3/8/2006,Part-Time
+765,Aisha Sookun,Mahébourg,53788343,28/2/2004,Full-Time
+766,Sneha Nundlall,Le Morne,52567993,10/1/2018,Full-Time
+767,Mahesh Bhujun,Phoenix,57910882,15/8/2022,Full-Time
+768,Krishna Kessuram,Grand Baie,52424049,21/5/2025,Part-Time
+769,Mahesh Bhujun,Souillac,53281564,20/12/2009,Full-Time
+770,Yamini Luchmun,Grand Baie,51947394,25/9/2001,Full-Time
+771,Chandni Sunassee,Bel Air,56968665,13/5/2021,Full-Time
+772,Namrata Mangat,Pamplemousses,51941297,8/8/2022,Full-Time
+773,Lavina Ramtohul,Mahébourg,53667511,13/8/2003,Part-Time
+774,Rhea Ramsamy,Piton,59531119,22/10/2010,Full-Time
+775,Hemali Ramphool,Petit Raffray,56213692,15/6/2002,Full-Time
+776,Rohini Mawjee,Mahébourg,59988975,2/3/2009,Part-Time
+777,Vikas Ravina,Black River,53860230,28/6/2008,Part-Time
+778,Krishna Lutchmun,Chemin Grenier,58861209,22/7/2022,Part-Time
+779,Nilesh Sunassee,Rose Hill,59723095,16/4/2002,Full-Time
+780,Jasmine Moosun,Souillac,51666432,25/10/2007,Part-Time
+781,Sakshi Bhujun,Chemin Grenier,58622539,5/2/2008,Full-Time
+782,Harsha Sooreea,Baie du Tombeau,51980549,4/5/2020,Part-Time
+783,Bina Ramnauth,Curepipe,51433403,15/7/2021,Part-Time
+784,Gautam Bhagwandeen,Quatre Bornes,57898387,27/3/2001,Full-Time
+785,Tushar Bhujoharry,Pamplemousses,52747072,25/5/2019,Part-Time
+786,Umesh Ramnauth,Albion,59180646,4/8/2020,Part-Time
+787,Rohini Aumeer,Goodlands,59261922,14/8/2018,Full-Time
+788,Sandeep Luchmun,Roches Noires,56260344,15/4/2006,Full-Time
+789,Meena Seetohul,Moka,54680586,10/12/2001,Part-Time
+790,Krishna Joganah,Roches Noires,54579244,10/8/2014,Part-Time
+791,Reyansh Bheekhun,Tamarin,51516068,24/11/2022,Full-Time
+792,Meena Mahadeo,Piton,51348069,6/8/2020,Part-Time
+793,Krishna Seeboruth,Roches Noires,51948935,27/5/2021,Part-Time
+794,Disha Vencatachellum,Goodlands,59317480,22/7/2014,Part-Time
+795,Vidya Neermul,Curepipe,53776365,7/3/2013,Full-Time
+796,Chirag Gunness,Le Morne,58272675,13/11/2020,Full-Time
+797,Arjun Nurseemul,Vacoas,53016496,14/3/2005,Full-Time
+798,Meena Sobhee,Albion,51303562,26/9/2003,Full-Time
+799,Aarav Nundlall,Beau Bassin,58889844,28/6/2007,Part-Time
+800,Namrata Jhamat,Piton,59861603,5/12/2012,Full-Time
+801,Reyansh Seetohul,Black River,58666169,1/6/2014,Part-Time
+802,Nikita Bungaroo,Piton,55801004,5/9/2018,Full-Time
+803,Rajeev Parmessur,Phoenix,54272833,11/11/2016,Part-Time
+804,Puneet Seewoosagur,Terre Rouge,58765524,6/1/2004,Part-Time
+805,Sumit Bungaroo,Baie du Tombeau,57077970,1/3/2001,Full-Time
+806,Rakesh Parmessur,Riviere du Rempart,53795196,18/9/2001,Part-Time
+807,Rajeev Puttee,Beau Bassin,51269493,28/1/2008,Part-Time
+808,Gautam Beekharry,Piton,52166490,1/12/2005,Part-Time
+809,Kiran Mangat,Flic en Flac,55222594,9/5/2009,Full-Time
+810,Amit Gopauloo,Piton,55497983,15/11/2018,Full-Time
+811,Bina Mohabeer,Black River,54013080,13/10/2006,Full-Time
+812,Rohini Aumeer,Flacq,56597729,20/3/2012,Full-Time
+813,Saurabh Gunness,Pamplemousses,56573849,14/7/2001,Part-Time
+814,Darshan Tandrayen,Black River,57216566,19/2/2001,Part-Time
+815,Sandeep Rungasamy,Chamarel,57418156,28/9/2021,Part-Time
+816,Disha Sooreea,Quatre Bornes,57716097,23/8/2018,Part-Time
+817,Ishan Gopauloo,Rose Hill,52316694,7/8/2003,Full-Time
+818,Aarya Joganah,Petit Raffray,59738167,6/11/2006,Full-Time
+819,Meena Lutchmun,Souillac,53638751,15/5/2025,Part-Time
+820,Prakash Nuckchady,Black River,52723684,13/4/2000,Full-Time
+821,Dev Moutou,Black River,56026558,20/9/2009,Full-Time
+822,Nikita Sunassee,Vacoas,52482313,11/1/2008,Part-Time
+823,Umesh Beekharry,Baie du Tombeau,52631769,16/9/2024,Part-Time
+824,Hemant Mootoosamy,Curepipe,53978202,2/10/2018,Full-Time
+825,Shreya Sunassee,Black River,57089930,26/10/2012,Full-Time
+826,Nikita Dabee,Beau Bassin,58803452,16/8/2013,Part-Time
+827,Yash Seeboruth,Beau Bassin,59743684,16/11/2007,Part-Time
+828,Sumit Gujadhur,Flacq,57036493,9/5/2014,Full-Time
+829,Mahesh Seewooboodhul,Bel Air,51147643,22/12/2025,Full-Time
+830,Akshay Mootoosamy,Baie du Tombeau,58672911,14/10/2013,Part-Time
+831,Keshav Moosun,Le Morne,53299675,7/10/2005,Part-Time
+832,Ishita Ramtohul,Riviere du Rempart,59811182,19/5/2012,Part-Time
+833,Akshay Seewooboodhul,Chamarel,53269383,18/2/2015,Part-Time
+834,Sneha Seetohul,Beau Bassin,52100475,15/4/2002,Part-Time
+835,Jasmine Gokhool,Curepipe,59684977,17/11/2010,Full-Time
+836,Asha Mootoosamy,Flic en Flac,55334657,16/1/2014,Full-Time
+837,Vandana Sunassee,Piton,54298751,14/4/2002,Part-Time
+838,Umesh Mootoosamy,Chamarel,56318238,28/12/2011,Full-Time
+839,Amrita Sooreea,Black River,55925660,7/2/2024,Part-Time
+840,Divya Bungaroo,Le Morne,54413723,20/5/2019,Full-Time
+841,Chirag Mootoosamy,Moka,53942088,15/9/2017,Part-Time
+842,Amrita Madhow,Goodlands,55424422,27/3/2007,Full-Time
+843,Shreya Hurrynag,Phoenix,59827349,28/3/2017,Full-Time
+844,Rhea Sobhee,Moka,53988076,18/12/2011,Full-Time
+845,Hemali Ravina,Quatre Bornes,59714926,12/4/2010,Part-Time
+846,Zoya Bhujun,Moka,55487503,9/7/2003,Full-Time
+847,Zoya Mohabeer,Souillac,53616621,26/7/2010,Part-Time
+848,Shreya Boodia,Beau Bassin,52270114,16/5/2021,Part-Time
+849,Aryan Kessuram,Triolet,59635762,26/6/2021,Full-Time
+850,Dev Bungaroo,Quatre Bornes,54309560,10/6/2012,Part-Time
+851,Meena Rungasamy,Goodlands,56296022,26/1/2023,Full-Time
+852,Dev Bhagwandeen,Goodlands,51273312,16/4/2012,Part-Time
+853,Sandeep Mungur,Grand Baie,58588993,7/6/2008,Part-Time
+854,Zoya Nagappa,Beau Bassin,52556247,11/4/2005,Full-Time
+855,Yash Jhamat,Mahébourg,51289618,2/11/2017,Part-Time
+856,Rohit Gopaul,Moka,52147445,22/9/2025,Full-Time
+857,Umesh Mungly,Pamplemousses,53151444,11/9/2011,Part-Time
+858,Asha Vandapool,Beau Bassin,57271610,28/9/2011,Full-Time
+859,Jasmine Ramphool,Flic en Flac,54439563,14/12/2017,Part-Time
+860,Harsha Persand,Petit Raffray,54638814,12/1/2023,Full-Time
+861,Aryan Bheekhun,Phoenix,54974864,5/4/2013,Full-Time
+862,Kavita Sobhee,Black River,58419456,26/6/2000,Part-Time
+863,Aarav Sunassee,Baie du Tombeau,52222666,15/11/2020,Part-Time
+864,Amrita Moutou,Le Morne,59214263,12/9/2021,Part-Time
+865,Amit Soondrum,Le Morne,51296428,14/6/2012,Part-Time
+866,Yamini Nagappa,Terre Rouge,51923622,21/2/2012,Part-Time
+867,Anjali Mahadeo,Le Morne,57077068,1/10/2009,Part-Time
+868,Tanya Bheemul,Port Louis,56172550,5/10/2024,Part-Time
+869,Meena Jeetun,Bel Air,57931870,1/12/2011,Full-Time
+870,Ravi Bhujun,Chamarel,53008904,12/5/2014,Part-Time
+871,Arjun Madhow,Curepipe,55270782,15/4/2025,Full-Time
+872,Ravi Mahadeo,Terre Rouge,52141199,15/3/2012,Full-Time
+873,Mira Vandapool,Tamarin,58410097,10/10/2006,Full-Time
+874,Vivek Beekharry,Grand Baie,54826795,14/12/2017,Full-Time
+875,Nilesh Seeborun,Grand Baie,54754095,21/10/2007,Part-Time
+876,Jaya Boodhoo,Bel Air,59590206,26/9/2004,Full-Time
+877,Divya Beekharry,Beau Bassin,53608802,23/2/2015,Full-Time
+878,Rhea Bheemul,Tamarin,54384879,11/5/2005,Full-Time
+879,Arjun Gunness,Baie du Tombeau,54068038,2/4/2015,Full-Time
+880,Zeenat Ramphool,Moka,53807818,25/6/2010,Part-Time
+881,Parveen Daby,Pamplemousses,58590911,18/7/2018,Part-Time
+882,Neha Mahadeo,Quatre Bornes,54670398,20/2/2024,Part-Time
+883,Nandini Seewooboodhul,Goodlands,53627426,7/8/2012,Part-Time
+884,Hemant Vencatachellum,Rose Hill,57208409,28/10/2018,Part-Time
+885,Tanisha Gokhool,Pamplemousses,58667129,1/5/2004,Full-Time
+886,Saurabh Rama,Petit Raffray,58333616,18/11/2005,Full-Time
+887,Tanisha Ramsamy,Le Morne,58269809,16/8/2015,Full-Time
+888,Asha Sooreea,Flic en Flac,55177369,11/5/2010,Full-Time
+889,Preeti Dabee,Beau Bassin,55429194,22/5/2005,Full-Time
+890,Roshni Sunassee,Triolet,55452825,12/8/2016,Part-Time
+891,Tushar Bissoondoyal,Quatre Bornes,59734485,6/10/2003,Full-Time
+892,Meena Parmessur,Port Louis,54018363,3/8/2011,Full-Time
+893,Ananya Jeebun,Roches Noires,58697940,25/2/2002,Full-Time
+894,Eshan Soondrum,Phoenix,58280035,28/3/2022,Full-Time
+895,Anjali Lutchmun,Albion,58092425,16/8/2009,Full-Time
+896,Rhea Dabee,Phoenix,52109504,19/8/2009,Full-Time
+897,Darshan Ramasawmy,Bel Air,51694120,12/5/2015,Full-Time
+898,Mira Sunassee,Le Morne,55656240,25/3/2011,Part-Time
+899,Madhavi Beekharry,Flacq,53673758,19/10/2002,Full-Time
+900,Hemant Neermul,Souillac,54028305,4/9/2011,Part-Time
+901,Aryan Joganah,Chemin Grenier,56815404,8/8/2017,Full-Time
+902,Ishan Moosun,Triolet,55994954,28/2/2022,Part-Time
+903,Sneha Seeborun,Black River,54861675,13/4/2018,Full-Time
+904,Yamini Bungaroo,Black River,59991650,23/12/2012,Full-Time
+905,Ananya Ramphul,Goodlands,53186507,17/2/2000,Part-Time
+906,Vikas Bissoondoyal,Black River,55049692,27/3/2025,Full-Time
+907,Tushar Sunassee,Piton,54931049,13/3/2021,Part-Time
+908,Aisha Madhow,Albion,54333844,1/8/2005,Full-Time
+909,Nikita Puttee,Chamarel,56563759,13/8/2017,Part-Time
+910,Vikas Bhujun,Piton,58597777,24/8/2005,Full-Time
+911,Anjali Sunassee,Terre Rouge,57845936,16/10/2023,Full-Time
+912,Siddharth Luchmun,Beau Bassin,57642486,28/8/2016,Part-Time
+913,Deepak Gopaul,Flic en Flac,58148359,14/9/2015,Part-Time
+914,Yamini Madhow,Quatre Bornes,51561880,13/8/2017,Part-Time
+915,Rachit Rama,Souillac,59534098,21/7/2019,Full-Time
+916,Tanya Dabee,Phoenix,51197561,25/5/2010,Part-Time
+917,Chandni Puttee,Roches Noires,55877571,12/1/2017,Part-Time
+918,Tanya Nurseemul,Souillac,59227766,22/12/2015,Full-Time
+919,Nilesh Tandrayen,Moka,52527986,7/10/2020,Full-Time
+920,Krishna Nurseemul,Flacq,54014602,8/12/2025,Part-Time
+921,Rajendra Ramasawmy,Riviere du Rempart,55519211,17/11/2017,Part-Time
+922,Arvind Mahadeo,Mahébourg,52020998,18/7/2014,Full-Time
+923,Amit Ravina,Black River,56524176,9/1/2012,Part-Time
+924,Zoya Beekharry,Grand Baie,59108645,16/3/2005,Full-Time
+925,Tushar Neermul,Phoenix,52960673,27/3/2013,Full-Time
+926,Yash Bodha,Baie du Tombeau,56826126,3/12/2025,Full-Time
+927,Preeti Ramtohul,Petit Raffray,56056733,21/9/2025,Full-Time
+928,Bhavesh Ramtohul,Beau Bassin,57114058,26/5/2025,Part-Time
+929,Pranav Mootoosamy,Goodlands,58048169,14/1/2016,Part-Time
+930,Amit Kessuram,Petit Raffray,55993183,9/3/2012,Full-Time
+931,Kavya Jeetun,Goodlands,58745477,21/10/2003,Full-Time
+932,Jayesh Rama,Petit Raffray,54692278,3/3/2010,Full-Time
+933,Kavita Jeetun,Port Louis,57862357,24/5/2022,Part-Time
+934,Amit Beekharry,Bel Air,52983866,16/12/2008,Full-Time
+935,Krishna Bissoondoyal,Chamarel,53010930,2/10/2008,Part-Time
+936,Alok Bhujun,Mahébourg,52575240,23/6/2013,Part-Time
+937,Lavina Boodia,Baie du Tombeau,53463972,5/6/2008,Full-Time
+938,Geeta Moosun,Quatre Bornes,59877982,1/12/2010,Full-Time
+939,Nandini Pather,Black River,51974578,20/9/2008,Full-Time
+940,Amrita Jankee,Tamarin,55566293,24/5/2017,Part-Time
+941,Nandini Dabee,Tamarin,55127809,16/4/2025,Part-Time
+942,Rajeev Parmessur,Chamarel,54825286,16/4/2012,Part-Time
+943,Nandini Gujadhur,Le Morne,52819030,25/2/2005,Part-Time
+944,Aryan Lutchmun,Port Louis,58493153,22/3/2008,Part-Time
+945,Sandeep Ramchurn,Phoenix,51196501,20/5/2000,Full-Time
+946,Kavya Rama,Mahébourg,54053302,16/12/2006,Full-Time
+947,Harsha Ramasawmy,Phoenix,56199562,16/1/2021,Part-Time
+948,Sumit Bissoondoyal,Grand Baie,55167083,1/10/2005,Full-Time
+949,Sakshi Mohabeer,Le Morne,55767070,11/9/2024,Full-Time
+950,Reyansh Ravina,Baie du Tombeau,55069257,22/2/2016,Full-Time
+951,Yamini Ramchunder,Grand Baie,52305116,6/10/2024,Part-Time
+952,Ishan Kistnen,Curepipe,51865610,12/2/2001,Part-Time
+953,Suraj Jankee,Riviere du Rempart,52223887,27/12/2009,Full-Time
+954,Nandini Gopauloo,Quatre Bornes,52378070,5/6/2024,Full-Time
+955,Rhea Sungkur,Port Louis,57999866,23/4/2006,Part-Time
+956,Vandana Bissessur,Phoenix,58531319,27/11/2002,Full-Time
+957,Umesh Soondrum,Petit Raffray,58128133,21/7/2007,Full-Time
+958,Hemali Ramphul,Pamplemousses,55896683,11/1/2003,Part-Time
+959,Vivek Gokhool,Flacq,56952265,22/8/2015,Full-Time
+960,Aarya Bhujun,Bel Air,55647131,3/2/2020,Full-Time
+961,Jaya Dabee,Chemin Grenier,55284086,28/6/2023,Part-Time
+962,Reshma Bissessur,Quatre Bornes,53636797,18/5/2011,Full-Time
+963,Deepak Mootoosamy,Pamplemousses,58190537,25/4/2005,Full-Time
+964,Rajendra Kistnen,Bel Air,53340303,22/3/2011,Part-Time
+965,Aisha Kistnen,Roches Noires,58520233,25/7/2011,Full-Time
+966,Meena Bungaroo,Albion,55901791,19/7/2009,Part-Time
+967,Sneha Jeebun,Goodlands,52822856,19/2/2025,Full-Time
+968,Nilesh Hurchurn,Mahébourg,58259441,10/8/2009,Full-Time
+969,Zeenat Tandrayen,Black River,54372032,12/7/2025,Full-Time
+970,Ananya Sawmynaden,Grand Baie,59406654,27/11/2015,Part-Time
+971,Bharat Nagowah,Chemin Grenier,53657482,1/3/2018,Full-Time
+972,Aarya Vandapool,Black River,56060635,27/8/2022,Part-Time
+973,Saurabh Bheemul,Flacq,53358730,4/9/2003,Full-Time
+974,Ravi Ramphul,Triolet,56077638,5/2/2011,Part-Time
+975,Ananya Sunassee,Tamarin,57231381,13/5/2005,Part-Time
+976,Sharanya Nagappa,Black River,53482090,16/7/2014,Part-Time
+977,Vinay Rama,Riviere du Rempart,56751069,24/6/2016,Part-Time
+978,Alok Ramphool,Moka,58579542,14/4/2012,Part-Time
+979,Vidya Vencatachellum,Tamarin,58436466,26/10/2023,Part-Time
+980,Vikas Seewooboodhul,Quatre Bornes,52420129,20/1/2001,Full-Time
+981,Divya Ramtohul,Souillac,57365174,14/5/2005,Part-Time
+982,Namrata Daby,Mahébourg,52839791,23/11/2006,Part-Time
+983,Aarya Persand,Rose Hill,55363875,11/7/2009,Full-Time
+984,Akshay Jeetun,Roches Noires,52286475,23/11/2005,Full-Time
+985,Puneet Hurchand,Pamplemousses,53423173,2/6/2000,Full-Time
+986,Parveen Kessuram,Curepipe,58170006,10/2/2003,Full-Time
+987,Sharanya Bissoondoyal,Vacoas,58482310,26/12/2019,Part-Time
+988,Reshma Jodhun,Moka,57924140,2/8/2025,Part-Time
+989,Sumit Hurchurn,Quatre Bornes,57404011,3/12/2015,Full-Time
+990,Bina Sawmynaden,Mahébourg,58330545,4/8/2017,Part-Time
+991,Rachit Ramnauth,Phoenix,54715802,1/2/2020,Full-Time
+992,Aarya Sobhee,Rose Hill,52861469,2/6/2003,Part-Time
+993,Viveka Hurrynag,Petit Raffray,56558766,17/8/2010,Part-Time
+994,Viveka Ramchurn,Grand Baie,58776323,27/8/2016,Full-Time
+995,Zoya Mungly,Chemin Grenier,52470944,23/9/2025,Full-Time
+996,Kavya Boodia,Mahébourg,52006336,25/10/2010,Full-Time
+997,Manish Persand,Riviere du Rempart,57179631,16/7/2002,Part-Time
+998,Dev Hurrynag,Souillac,56854924,4/10/2019,Part-Time
+999,Parveen Vencatachellum,Triolet,58839084,28/9/2012,Full-Time
+1000,Jayesh Boodia,Le Morne,59913639,10/3/2002,Full-Time
