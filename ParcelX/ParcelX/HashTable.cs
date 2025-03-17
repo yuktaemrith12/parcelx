@@ -39,6 +39,11 @@ namespace PostalCW.DataStructures
             return default; // Not found
         }
 
+        public void Remove(int key)
+        {
+            int index = GetHash(key);
+            buckets[index].RemoveAll(kvp => kvp.Key == key);
+        }
 
     }
 }
