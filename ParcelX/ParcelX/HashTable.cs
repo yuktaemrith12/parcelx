@@ -22,5 +22,12 @@ namespace PostalCW.DataStructures
             return key % size;
         }
 
+        public void Insert(int key, T value)
+        {
+            int index = GetHash(key);
+            buckets[index].Add(new KeyValuePair<int, T>(key, value));
+        }
+
+
     }
 }
