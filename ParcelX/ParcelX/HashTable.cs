@@ -17,5 +17,10 @@ namespace PostalCW.DataStructures
             }
         }
 
+        private int GetHash(int key)
+        {
+            return key % size;
+        }
+
     }
 }
