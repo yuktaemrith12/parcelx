@@ -234,7 +234,23 @@ namespace PostalCW
         // == EDIT BUTTON ==
         private void EditButton_Click(object sender, EventArgs e)
         {
+            if (postmanDataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select an officer to edit.");
+                return;
+            }
 
+            selectedOfficerID = Convert.ToInt32(postmanDataGridView.SelectedRows[0].Cells["OfficerID"].Value);
+            Officer selectedOfficer = officerTable.Get(selectedOfficerID);
+
+            if (selectedOfficer != null)
+            {
+                OName.Text = selectedOfficer.OfficerName;
+                OAddress.Text = selectedOfficer.OfficerAddress;
+                OContact.Text = selectedOfficer.OfficerContact;
+                OHireDate.Value = selectedOfficer.HireDate;
+                OEmploymentType.SelectedItem = selectedOfficer.Employment;
+            }
         }
 
 
