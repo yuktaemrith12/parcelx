@@ -1,11 +1,11 @@
 # 📦 Postal Management System - README
 
-## 📌 Project Overview
+##  Project Overview
 The **Postal Management System** is a C# Windows Forms application designed to manage postal operations, including clients, packages, cash transfers, and postman details. The system utilizes a **hash table for fast lookups** and integrates with a **SQL Server database**.
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### **1. Requirements**
 Before running the project, ensure you have the following installed:
@@ -38,7 +38,7 @@ cd PostalManagementSystem
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### **1. Open Project in Visual Studio**
 - Navigate to the project folder and open **`PostalCW.sln`** in **Visual Studio**.
@@ -52,7 +52,7 @@ cd PostalManagementSystem
 
 ---
 
-## 📝 How to Use
+##  How to Use
 
 ### **1. Main Menu**
 - The application opens to a **main menu** where you can navigate to:
@@ -80,7 +80,7 @@ cd PostalManagementSystem
 
 ---
 
-## 🐞 Troubleshooting
+##  Troubleshooting
 
 ### **Database Connection Issues**
 - If you get a **database connection error**, check:
@@ -93,13 +93,7 @@ cd PostalManagementSystem
 
 ---
 
-## 👥 Contributors
-- **Your Name**
-- **Team Member 2**
-- **Team Member 3**
-- **Team Member 4**
 
----
 
 ## 📜 License
 This project is licensed under the **MIT License**.
