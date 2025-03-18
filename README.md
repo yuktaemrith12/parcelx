@@ -94,10 +94,3 @@ cd PostalManagementSystem
 ---
 
 
-
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
-### 🚀 Enjoy using the Postal Management System! 🚀
