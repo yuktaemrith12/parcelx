@@ -5,14 +5,16 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-//using PostalCW.DataStructures;
+using PostalCW.DataStructures;
 //using Microsoft.Data.SqlClient;
 
 namespace PostalCW
 {
     public partial class Postman : Form
     {
-       
+        private HashTable<Officer> officerTable = new HashTable<Officer>();
+        private int selectedOfficerID = -1;
+        public string connectionString = @"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public Postman()
         {
            InitializeComponent();
@@ -94,6 +96,15 @@ namespace PostalCW
 
         }
 
+
+    }
+    public class Officer{
+        public int OfficerID { get; set; }
+        public string? OfficerName { get; set; }
+        public string? OfficerAddress { get; set; }
+        public string? OfficerContact { get; set; }
+        public DateTime HireDate { get; set; }
+        public string? Employment { get; set; }
 
     }
 
