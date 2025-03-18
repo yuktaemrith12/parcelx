@@ -21,8 +21,8 @@ namespace PostalCW
         {
             InitializeComponent();
             InitializeDataGridView(); // Setup DataGridView  
-            //LoadFromDatabase(); // Load data from SQL into Hash Table
-            //LoadOfficerData(); // Display data  
+            LoadFromDatabase(); // Load data from SQL into Hash Table
+            LoadOfficerData(); // Display data  
 
         }
 
@@ -117,13 +117,66 @@ namespace PostalCW
             }
         }
 
+        // == INSERT OFFICER INTO DATABASE ==
+        private int InsertIntoDatabase(Officer officer)
+        {
+            int newOfficerID;
 
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "INSERT INTO PostmanTbl (OfficerName, OfficerAddress, OfficerContact, HireDate, Employment) " +
+                    "OUTPUT INSERTED.OfficerID " +
+                    "VALUES (@OfficerName, @OfficerAddress, @OfficerContact, @HireDate, @Employment)", con);
+
+                cmd.Parameters.AddWithValue("@OfficerName", officer.OfficerName);
+                cmd.Parameters.AddWithValue("@OfficerAddress", officer.OfficerAddress);
+                cmd.Parameters.AddWithValue("@OfficerContact", officer.OfficerContact);
+                cmd.Parameters.AddWithValue("@HireDate", officer.HireDate);
+                cmd.Parameters.AddWithValue("@Employment", officer.Employment);
+
+                newOfficerID = (int)cmd.ExecuteScalar();
+            }
+
+            return newOfficerID;
+        }
+
+        // == UPDATE OFFICER IN DATABASE ==
+        private void UpdateDatabase(Officer officer)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE PostmanTbl SET OfficerName=@OfficerName, OfficerAddress=@OfficerAddress, " +
+                    "OfficerContact=@OfficerContact, HireDate=@HireDate, Employment=@Employment " +
+                    "WHERE OfficerID=@OfficerID", con);
+
+                cmd.Parameters.AddWithValue("@OfficerID", officer.OfficerID);
+                cmd.Parameters.AddWithValue("@OfficerName", officer.OfficerName);
+                cmd.Parameters.AddWithValue("@OfficerAddress", officer.OfficerAddress);
+                cmd.Parameters.AddWithValue("@OfficerContact", officer.OfficerContact);
+                cmd.Parameters.AddWithValue("@HireDate", officer.HireDate);
+                cmd.Parameters.AddWithValue("@Employment", officer.Employment);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
 
         // == DELETE OFFICER FROM DATABASE ==
         private void DeleteFromDatabase(int officerID)
         {
-
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM PostmanTbl WHERE OfficerID = @OfficerID", con);
+                cmd.Parameters.AddWithValue("@OfficerID", officerID);
+                cmd.ExecuteNonQuery();
+            }
         }
+
+
 
         // == SAVE BUTTON ==  
         private void saveButton_Click(object sender, EventArgs e)
