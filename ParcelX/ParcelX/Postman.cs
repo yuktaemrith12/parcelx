@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using PostalCW.DataStructures;
-//using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace PostalCW
 {
@@ -363,15 +363,5 @@ namespace PostalCW
 
     }
 
-    // Officer Class 
-    public class Officer
-    {
-        public int OfficerID { get; set; }
-        public string OfficerName { get; set; }
-        public string OfficerAddress { get; set; }
-        public string OfficerContact { get; set; }
-        public DateTime HireDate { get; set; }
-        public string Employment { get; set; }
-    }
 
 }
