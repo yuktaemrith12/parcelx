@@ -7,7 +7,6 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using PostalCW.DataStructures;
 using Microsoft.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PostalCW
 {
@@ -74,6 +73,7 @@ namespace PostalCW
             postmanDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+
         // == LOAD OFFICERS FROM SQL DATABASE INTO HASH TABLE ==
         private void LoadFromDatabase()
         {
@@ -117,6 +117,7 @@ namespace PostalCW
             }
         }
 
+
         // == INSERT OFFICER INTO DATABASE ==
         private int InsertIntoDatabase(Officer officer)
         {
@@ -141,6 +142,7 @@ namespace PostalCW
 
             return newOfficerID;
         }
+
 
         // == UPDATE OFFICER IN DATABASE ==
         private void UpdateDatabase(Officer officer)
@@ -175,8 +177,6 @@ namespace PostalCW
                 cmd.ExecuteNonQuery();
             }
         }
-
-
 
         // == SAVE BUTTON ==  
         private void saveButton_Click(object sender, EventArgs e)
