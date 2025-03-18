@@ -257,7 +257,18 @@ namespace PostalCW
         // == DELETE BUTTON ==
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            if (postmanDataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select an officer to delete.");
+                return;
+            }
 
+            int officerID = Convert.ToInt32(postmanDataGridView.SelectedRows[0].Cells["OfficerID"].Value);
+            DeleteFromDatabase(officerID);
+            officerTable.Remove(officerID);
+
+            MessageBox.Show("Officer Deleted Successfully!");
+            LoadOfficerData();
 
         }
 
