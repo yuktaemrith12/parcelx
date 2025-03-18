@@ -181,14 +181,52 @@ namespace PostalCW
         // == SAVE BUTTON ==  
         private void saveButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(OName.Text) ||
+                string.IsNullOrWhiteSpace(OAddress.Text) ||
+                string.IsNullOrWhiteSpace(OContact.Text) ||
+                OEmploymentType.SelectedItem == null)
+            {
+                MessageBox.Show("Incomplete Data");
+                return;
+            }
 
+            Officer newOfficer = new Officer
+            {
+                OfficerID = selectedOfficerID,
+                OfficerName = OName.Text,
+                OfficerAddress = OAddress.Text,
+                OfficerContact = OContact.Text,
+                HireDate = OHireDate.Value,
+                Employment = OEmploymentType.SelectedItem.ToString()
+            };
+
+            if (selectedOfficerID == -1)
+            {
+                newOfficer.OfficerID = InsertIntoDatabase(newOfficer);
+                officerTable.Insert(newOfficer.OfficerID, newOfficer);
+            }
+            else
+            {
+                UpdateDatabase(newOfficer);
+                officerTable.Remove(selectedOfficerID);
+                officerTable.Insert(newOfficer.OfficerID, newOfficer);
+            }
+
+            MessageBox.Show("Officer saved successfully!");
+            LoadOfficerData(); // Refresh  
+            ResetFields();
         }
 
 
         // == RESET FIELDS ==
         private void ResetFields()
         {
-
+            selectedOfficerID = -1;
+            OName.Clear();
+            OAddress.Clear();
+            OContact.Clear();
+            OHireDate.Value = DateTime.Now;
+            OEmploymentType.SelectedIndex = -1;
         }
 
 
