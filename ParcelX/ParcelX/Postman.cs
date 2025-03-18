@@ -277,13 +277,74 @@ namespace PostalCW
         //SEARCH FUNCTIONALITY
         private void SearchIcon_Click(object sender, EventArgs e)
         {
+            string searchQuery = SearchTextbox.Text.Trim().ToLower(); // Convert input to lowercase for case-insensitivity
 
+            if (string.IsNullOrWhiteSpace(searchQuery))
+            {
+                MessageBox.Show("Please enter an Officer ID or Name to search.");
+                return;
+            }
+
+            List<Officer> matchingOfficers = new List<Officer>(); // List to store all matching officers
+
+            // Try searching by Officer ID (if numeric)
+            if (int.TryParse(searchQuery, out int officerID))
+            {
+                Officer foundOfficer = officerTable.Get(officerID);
+                if (foundOfficer != null)
+                {
+                    matchingOfficers.Add(foundOfficer);
+                }
+            }
+            else
+            {
+                // Search for Officer Name (Partial match)
+                foreach (Officer officer in officerTable.GetAll())
+                {
+                    if (officer.OfficerName.ToLower().Contains(searchQuery)) // Partial case-insensitive match
+                    {
+                        matchingOfficers.Add(officer);
+                    }
+                }
+            }
+
+            if (matchingOfficers.Count > 0)
+            {
+                // Deselect all previous selections
+                postmanDataGridView.ClearSelection();
+
+                // Select all matching rows in DataGridView
+                foreach (DataGridViewRow row in postmanDataGridView.Rows)
+                {
+                    int rowOfficerID = Convert.ToInt32(row.Cells["OfficerID"].Value);
+                    if (matchingOfficers.Any(o => o.OfficerID == rowOfficerID)) // Check if row matches any found officer
+                    {
+                        row.Selected = true;
+                    }
+                }
+
+                MessageBox.Show($"Found {matchingOfficers.Count} matching result(s).");
+            }
+            else
+            {
+                MessageBox.Show("No matching officer found.");
+            }
         }
 
 
         private void CrossIcon_Click_1(object sender, EventArgs e)
         {
+            // Clear the search box
+            SearchTextbox.Text = "";
 
+            // Deselect any selected row in DataGridView
+            postmanDataGridView.ClearSelection();
+
+            // Reset scrolling to top
+            if (postmanDataGridView.Rows.Count > 0)
+            {
+                postmanDataGridView.FirstDisplayedScrollingRowIndex = 0;
+            }
 
         }
 
