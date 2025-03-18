@@ -74,6 +74,48 @@ namespace PostalCW
             postmanDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+        // == LOAD OFFICERS FROM SQL DATABASE INTO HASH TABLE ==
+        private void LoadFromDatabase()
+        {
+            officerTable = new HashTable<Officer>();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT OfficerID, OfficerName, OfficerAddress, OfficerContact, HireDate, Employment FROM PostmanTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Officer officer = new Officer
+                    {
+                        OfficerID = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
+                        OfficerName = reader.IsDBNull(1) ? "N/A" : reader.GetString(1),
+                        OfficerAddress = reader.IsDBNull(2) ? "N/A" : reader.GetString(2),
+                        OfficerContact = reader.IsDBNull(3) ? "N/A" : reader.GetString(3),
+                        HireDate = reader.IsDBNull(4) ? DateTime.MinValue : reader.GetDateTime(4),
+                        Employment = reader.IsDBNull(5) ? "N/A" : reader.GetString(5)
+                    };
+
+                    officerTable.Insert(officer.OfficerID, officer);
+                }
+            }
+        }
+
+
+
+        // == LOAD OFFICERS INTO DATA GRID VIEW ==
+        private void LoadOfficerData()
+        {
+            postmanDataGridView.Rows.Clear();
+
+            foreach (Officer officer in officerTable.GetAll()) // Fetch from hash table
+            {
+                postmanDataGridView.Rows.Add(officer.OfficerID, officer.OfficerName, officer.OfficerAddress,
+                                             officer.OfficerContact,
+                                             officer.HireDate.ToShortDateString(), officer.Employment);
+            }
+        }
 
 
 
