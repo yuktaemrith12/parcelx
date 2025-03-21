@@ -85,7 +85,54 @@ namespace PostalCW
             clientDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-       
+        
+        // == LOAD CLIENTS FROM SQL DATABASE INTO HASH TABLE == //
+        private void LoadFromDatabase()
+        {
+            clientTable = new HashTable<Client>();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM ClientsTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Client client = new Client
+                    {
+                        ClientID = reader.GetInt32(0),
+                        ClientName = reader.GetString(1),
+                        ClientNID = reader.GetString(2),
+                        ClientContact = reader.GetInt32(3).ToString(),
+                        Email = reader.GetString(4),
+                        ClientAddress = reader.GetString(5),
+                        NIDpic = (reader["NIDpic"] != DBNull.Value) ? ByteArrayToImage((byte[])reader["NIDpic"]) : null
+                    };
+
+                    clientTable.Insert(client.ClientID, client);
+                }
+            }
+        }
+
+        // == IMAGE CONVERSION METHODS == //
+        private byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img?.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                return ms.ToArray();
+            }
+        }
+
+        private Image ByteArrayToImage(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
+        }
+
 
 
 
