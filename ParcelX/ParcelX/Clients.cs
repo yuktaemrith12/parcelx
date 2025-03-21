@@ -128,6 +128,32 @@ namespace PostalCW
             }
         }
 
+        // == INSERT CLIENT INTO DATABASE == //
+        private int InsertIntoDatabase(Client client)
+        {
+            int newClientID = -1;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "INSERT INTO ClientsTbl (ClientName, ClientNID, ClientContact, Email, ClientAdress, NIDpic) " +
+                    "OUTPUT INSERTED.ClientID " + // Retrieves the new ClientID
+                    "VALUES (@ClientName, @ClientNID, @ClientContact, @Email, @ClientAdress, @NIDpic)", con);
+
+                cmd.Parameters.AddWithValue("@ClientName", client.ClientName);
+                cmd.Parameters.AddWithValue("@ClientNID", client.ClientNID);
+                cmd.Parameters.AddWithValue("@ClientContact", client.ClientContact);
+                cmd.Parameters.AddWithValue("@Email", client.Email);
+                cmd.Parameters.AddWithValue("@ClientAdress", client.ClientAddress);
+                cmd.Parameters.AddWithValue("@NIDpic", ImageToByteArray(client.NIDpic));
+
+                newClientID = (int)cmd.ExecuteScalar(); // Get the actual ClientID from SQL
+            }
+
+            return newClientID; // Return the correct ClientID
+        }
+
         // == IMAGE CONVERSION METHODS == //
         private byte[] ImageToByteArray(Image img)
         {
