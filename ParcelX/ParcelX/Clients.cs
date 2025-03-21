@@ -154,6 +154,28 @@ namespace PostalCW
             return newClientID; // Return the correct ClientID
         }
 
+        // == UPDATE CLIENT IN DATABASE == //
+        private void UpdateDatabase(Client client)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE ClientsTbl SET ClientName=@ClientName, ClientNID=@ClientNID, ClientContact=@ClientContact, " +
+                    "Email=@Email, ClientAdress=@ClientAdress, NIDpic=@NIDpic WHERE ClientID=@ClientID", con);
+
+                cmd.Parameters.AddWithValue("@ClientID", client.ClientID);
+                cmd.Parameters.AddWithValue("@ClientName", client.ClientName);
+                cmd.Parameters.AddWithValue("@ClientNID", client.ClientNID);
+                cmd.Parameters.AddWithValue("@ClientContact", client.ClientContact);
+                cmd.Parameters.AddWithValue("@Email", client.Email);
+                cmd.Parameters.AddWithValue("@ClientAdress", client.ClientAddress);
+                cmd.Parameters.AddWithValue("@NIDpic", ImageToByteArray(client.NIDpic)); // Convert image to byte array
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         // == IMAGE CONVERSION METHODS == //
         private byte[] ImageToByteArray(Image img)
         {
