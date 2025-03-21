@@ -176,6 +176,18 @@ namespace PostalCW
             }
         }
 
+        // == DELETE CLIENT FROM DATABASE == //
+        private void DeleteFromDatabase(int clientID)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM ClientsTbl WHERE ClientID = @ClientID", con);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         // == IMAGE CONVERSION METHODS == //
         private byte[] ImageToByteArray(Image img)
         {
