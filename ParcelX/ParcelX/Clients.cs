@@ -7,7 +7,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Forms;
 using PostalCW.DataStructures;
-using System.Data.SqlClient;
+//using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 
 namespace PostalCW
@@ -15,6 +15,9 @@ namespace PostalCW
 {
     public partial class Clients : Form
     {
+        private HashTable<Client> clientTable = new HashTable<Client>();
+        private int selectedClientID = -1; // Track client ID
+        public string connectionString = @"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
 
 
         public Clients()
@@ -125,5 +128,14 @@ namespace PostalCW
 
     }
 
-
+    public class Client
+    {
+        public int ClientID { get; set; }
+        public string? ClientName { get; set; }
+        public string? ClientNID { get; set; }
+        public string? ClientContact { get; set; }
+        public string? Email { get; set; }
+        public string? ClientAddress { get; set; }
+        public Image? NIDpic { get; set; } 
+    }
 }
