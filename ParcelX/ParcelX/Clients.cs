@@ -115,6 +115,19 @@ namespace PostalCW
             }
         }
 
+        // == LOAD CLIENTS INTO DATA GRID VIEW == //
+        private void LoadClientData()
+        {
+            clientDataGridView.Rows.Clear(); // Clear existing rows
+
+            foreach (Client client in clientTable.GetAll()) // Fetch from hash table
+            {
+                object img = client.NIDpic ?? new Bitmap(1, 1);
+                clientDataGridView.Rows.Add(client.ClientID, client.ClientName, client.ClientNID,
+                                            client.ClientContact, client.Email, client.ClientAddress, img);
+            }
+        }
+
         // == IMAGE CONVERSION METHODS == //
         private byte[] ImageToByteArray(Image img)
         {
