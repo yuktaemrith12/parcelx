@@ -268,7 +268,24 @@ namespace PostalCW
         // == EDIT CLIENT == //
         private void EditButton_Click(object sender, EventArgs e)
         {
+            if (clientDataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a client to edit.");
+                return;
+            }
 
+            selectedClientID = Convert.ToInt32(clientDataGridView.SelectedRows[0].Cells["ClientID"].Value);
+            Client selectedClient = clientTable.Get(selectedClientID);
+
+            if (selectedClient != null)
+            {
+                ClientName.Text = selectedClient.ClientName;
+                ClientNID.Text = selectedClient.ClientNID;
+                ClientContact.Text = selectedClient.ClientContact;
+                ClientEmail.Text = selectedClient.Email;
+                ClientAddress.Text = selectedClient.ClientAddress;
+                ClientIDpic.Image = selectedClient.NIDpic;
+            }
         }
 
         // == UPLOAD IMAGE == //
