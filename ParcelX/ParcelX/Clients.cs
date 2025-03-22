@@ -290,9 +290,18 @@ namespace PostalCW
 
         // == UPLOAD IMAGE == //
         private void button1_Click(object sender, EventArgs e)
+    {
+        OpenFileDialog openFileDialog = new OpenFileDialog
         {
+            Title = "Select an Image",
+            Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+        };
 
+        if (openFileDialog.ShowDialog() == DialogResult.OK)
+        {
+            ClientIDpic.Image = Image.FromFile(openFileDialog.FileName);
         }
+}
 
         // == DELETE CLIENT == //
         private void DeleteButton_Click(object sender, EventArgs e)
