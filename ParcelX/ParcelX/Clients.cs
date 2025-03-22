@@ -7,7 +7,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Forms;
 using PostalCW.DataStructures;
-//using System.Data.SqlClient;
+using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 
 namespace PostalCW
@@ -15,6 +15,8 @@ namespace PostalCW
 {
     public partial class Clients : Form
     {
+
+
         private HashTable<Client> clientTable = new HashTable<Client>();
         private int selectedClientID = -1; // Track client ID
         public string connectionString = @"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
@@ -85,7 +87,6 @@ namespace PostalCW
             clientDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        
         // == LOAD CLIENTS FROM SQL DATABASE INTO HASH TABLE == //
         private void LoadFromDatabase()
         {
@@ -176,43 +177,8 @@ namespace PostalCW
             }
         }
 
-        // == DELETE CLIENT FROM DATABASE == //
-        private void DeleteFromDatabase(int clientID)
-        {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM ClientsTbl WHERE ClientID = @ClientID", con);
-                cmd.Parameters.AddWithValue("@ClientID", clientID);
-                cmd.ExecuteNonQuery();
-            }
-        }
 
-        // == IMAGE CONVERSION METHODS == //
-        private byte[] ImageToByteArray(Image img)
-        {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                img?.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                return ms.ToArray();
-            }
-        }
-
-        private Image ByteArrayToImage(byte[] byteArray)
-        {
-            using (MemoryStream ms = new MemoryStream(byteArray))
-            {
-                return Image.FromStream(ms);
-            }
-        }
-
-
-
-
-
-
-
-        // == SAVE CLIENT == //
+        // == SAVE BUTTON == //
         private void SaveButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(ClientName.Text) || string.IsNullOrWhiteSpace(ClientNID.Text) ||
@@ -251,21 +217,8 @@ namespace PostalCW
             ResetFields();
         }
 
-        
-        // == RESET FIELDS == //
-        private void ResetFields()
-        {
-            selectedClientID = -1;
-            ClientName.Clear();
-            ClientNID.Clear();
-            ClientContact.Clear();
-            ClientEmail.Clear();
-            ClientAddress.Clear();
-            ClientIDpic.Image = null;
-        }
 
-
-        // == EDIT CLIENT == //
+        // == EDIT BUTTON == //
         private void EditButton_Click(object sender, EventArgs e)
         {
             if (clientDataGridView.SelectedRows.Count == 0)
@@ -290,26 +243,77 @@ namespace PostalCW
 
         // == UPLOAD IMAGE == //
         private void button1_Click(object sender, EventArgs e)
-    {
-        OpenFileDialog openFileDialog = new OpenFileDialog
         {
-            Title = "Select an Image",
-            Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
-        };
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Select an Image",
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+            };
 
-        if (openFileDialog.ShowDialog() == DialogResult.OK)
-        {
-            ClientIDpic.Image = Image.FromFile(openFileDialog.FileName);
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ClientIDpic.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
-}
 
-        // == DELETE CLIENT == //
+        // == DELETE BUTTON == //
         private void DeleteButton_Click(object sender, EventArgs e)
         {
+            if (clientDataGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a client to delete.");
+                return;
+            }
 
+            int clientID = Convert.ToInt32(clientDataGridView.SelectedRows[0].Cells["ClientID"].Value);
+            DeleteFromDatabase(clientID);
+            clientTable.Remove(clientID);
+
+            MessageBox.Show("Client Deleted Successfully!");
+            LoadClientData(); // Refresh DataGridView
         }
 
+        // == DELETE CLIENT FROM DATABASE == //
+        private void DeleteFromDatabase(int clientID)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM ClientsTbl WHERE ClientID = @ClientID", con);
+                cmd.Parameters.AddWithValue("@ClientID", clientID);
+                cmd.ExecuteNonQuery();
+            }
+        }
 
+        // == IMAGE CONVERSION METHODS == //
+        private byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img?.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                return ms.ToArray();
+            }
+        }
+
+        private Image ByteArrayToImage(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
+        }
+
+        // == RESET FIELDS == //
+        private void ResetFields()
+        {
+            selectedClientID = -1;
+            ClientName.Clear();
+            ClientNID.Clear();
+            ClientContact.Clear();
+            ClientEmail.Clear();
+            ClientAddress.Clear();
+            ClientIDpic.Image = null;
+        }
 
         private void backBtn_Click(object sender, EventArgs e)
         {
@@ -318,14 +322,15 @@ namespace PostalCW
 
     }
 
+    // Client Class (Outside Clients Form) //
     public class Client
     {
         public int ClientID { get; set; }
-        public string? ClientName { get; set; }
-        public string? ClientNID { get; set; }
-        public string? ClientContact { get; set; }
-        public string? Email { get; set; }
-        public string? ClientAddress { get; set; }
-        public Image? NIDpic { get; set; } 
+        public string ClientName { get; set; }
+        public string ClientNID { get; set; }
+        public string ClientContact { get; set; }
+        public string Email { get; set; }
+        public string ClientAddress { get; set; }
+        public Image NIDpic { get; set; } 
     }
 }
