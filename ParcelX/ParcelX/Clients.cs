@@ -24,8 +24,8 @@ namespace PostalCW
         {
             InitializeComponent();
             InitializeDataGridView(); // Initialize columns 
-            //LoadFromDatabase(); // Load clients into hash table from SQL
-            //LoadClientData(); // Display clients 
+            LoadFromDatabase(); // Load clients into hash table from SQL
+            LoadClientData(); // Display clients 
 
         }
 
@@ -215,8 +215,53 @@ namespace PostalCW
         // == SAVE CLIENT == //
         private void SaveButton_Click(object sender, EventArgs e)
         {
-   
+            if (string.IsNullOrWhiteSpace(ClientName.Text) || string.IsNullOrWhiteSpace(ClientNID.Text) ||
+                string.IsNullOrWhiteSpace(ClientContact.Text) || string.IsNullOrWhiteSpace(ClientEmail.Text) ||
+                string.IsNullOrWhiteSpace(ClientAddress.Text))
+            {
+                MessageBox.Show("Incomplete Data");
+                return;
+            }
 
+            Client newClient = new Client
+            {
+                ClientID = selectedClientID,
+                ClientName = ClientName.Text,
+                ClientNID = ClientNID.Text,
+                ClientContact = ClientContact.Text,
+                Email = ClientEmail.Text,
+                ClientAddress = ClientAddress.Text,
+                NIDpic = ClientIDpic.Image
+            };
+
+            if (selectedClientID == -1)  
+            {
+                newClient.ClientID = InsertIntoDatabase(newClient);  
+                clientTable.Insert(newClient.ClientID, newClient);
+            }
+            else
+            {
+                UpdateDatabase(newClient);
+                clientTable.Remove(selectedClientID);
+                clientTable.Insert(newClient.ClientID, newClient);
+            }
+
+            MessageBox.Show("Client saved successfully!");
+            LoadClientData();
+            ResetFields();
+        }
+
+        
+        // == RESET FIELDS == //
+        private void ResetFields()
+        {
+            selectedClientID = -1;
+            ClientName.Clear();
+            ClientNID.Clear();
+            ClientContact.Clear();
+            ClientEmail.Clear();
+            ClientAddress.Clear();
+            ClientIDpic.Image = null;
         }
 
 
@@ -237,7 +282,6 @@ namespace PostalCW
         {
 
         }
-
 
 
 
