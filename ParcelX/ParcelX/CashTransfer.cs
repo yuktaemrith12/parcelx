@@ -160,8 +160,19 @@ namespace PostalCW
 
         private void ResetFields()
         {
-
+            selectedTransferID = -1;
+            Amount.Clear();
+            TransactionType.SelectedIndex = -1;
+            Description.Clear();
+            senderName.Text = "";
+            senderID.Clear();
+            transferDate.Value = DateTime.Now;
+            receiverName.Clear();
+            receiverContact.Clear();
+            receiverAddress.Clear();
+            TransactionStatus.SelectedIndex = -1;
         }
+
 
         private void backBtn_Click(object sender, EventArgs e)
         {
