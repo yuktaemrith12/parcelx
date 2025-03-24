@@ -15,11 +15,15 @@ namespace PostalCW
         // Database connection
         private SqlConnection Con = new SqlConnection(@"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
+        // Hash Table 
+        private HashTable<Transfer> transferTable = new HashTable<Transfer>();
+        private int selectedTransferID = -1; 
+
 
         public CashTransfer()
         {
             InitializeComponent();
-            //InitializeSearchFeature(); // Set up search feature for Sender Name
+            InitializeSearchFeature(); // Set up search feature for Sender Name
             //LoadFromDatabase(); // Load transactions from DB to hash table
             //LoadTransactionData(); // Display transactions in DataGridView
             InitializeDataGridView();
@@ -56,6 +60,54 @@ namespace PostalCW
 
             control.Region = new Region(path);
         }
+
+        // == SEARCH FEATURE ==//
+        private void InitializeSearchFeature()
+        {
+            senderName.DropDownStyle = ComboBoxStyle.DropDown; // Allows typing & selection
+            senderName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            senderName.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            AutoCompleteStringCollection senderNamesCollection = new AutoCompleteStringCollection();
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT ClientID, ClientName FROM ClientsTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                //  Load names into ComboBox & AutoComplete
+                while (reader.Read())
+                {
+                    string clientName = reader["ClientName"].ToString();
+                    int clientID = Convert.ToInt32(reader["ClientID"]);
+
+                    senderNamesCollection.Add(clientName);
+                    senderName.Items.Add(clientName); // Add names to ComboBox
+                }
+            }
+
+            senderName.AutoCompleteCustomSource = senderNamesCollection;
+
+            // Update Sender ID on selection change
+            senderName.SelectedIndexChanged += (s, e) => UpdateSenderID();
+            senderName.TextChanged += (s, e) => UpdateSenderID();
+        }
+
+        // Helper method to update Sender ID when a name is selected
+        private void UpdateSenderID()
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT ClientID FROM ClientsTbl WHERE ClientName = @ClientName", con);
+                cmd.Parameters.AddWithValue("@ClientName", senderName.Text);
+
+                object result = cmd.ExecuteScalar();
+                senderID.Text = (result != null) ? result.ToString() : "";
+            }
+        }
+
 
 
 
