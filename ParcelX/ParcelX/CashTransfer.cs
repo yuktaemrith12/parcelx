@@ -24,7 +24,7 @@ namespace PostalCW
         {
             InitializeComponent();
             InitializeSearchFeature(); // Set up search feature for Sender Name
-            //LoadFromDatabase(); // Load transactions from DB to hash table
+            LoadFromDatabase(); // Load transactions from DB to hash table
             //LoadTransactionData(); // Display transactions in DataGridView
             InitializeDataGridView();
 
@@ -42,7 +42,7 @@ namespace PostalCW
             ApplyRoundedEdges(panel4, 30);
 
             // Load transactions to display them in DataGridView
-            //LoadFromDatabase();
+            LoadFromDatabase();
             //LoadTransactionData();
         }
 
@@ -131,6 +131,40 @@ namespace PostalCW
 
             dataGridTransfer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        // == LOAD TRANSACTIONS FROM SQL DATABASE INTO HASH TABLE ==
+        private void LoadFromDatabase()
+        {
+            transferTable = new HashTable<Transfer>();
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM CashTransferTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Transfer transfer = new Transfer
+                    {
+                        TransferID = reader.GetInt32(0),
+                        TransferDate = reader.GetDateTime(1),
+                        Amount = reader.GetInt32(2), 
+                        TransferType = reader.GetString(3),
+                        TransferPurpose = reader.GetString(4),
+                        SenderID = reader.GetInt32(5),
+                        ReceiverName = reader.GetString(6),
+                        ReceiverAddress = reader.GetString(7),
+                        ReceiverContact = reader.GetString(8),
+                        Status = reader.GetString(9)
+                    };
+
+                    transferTable.Insert(transfer.TransferID, transfer);
+                }
+
+            }
+        }
+
 
 
 
