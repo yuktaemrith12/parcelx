@@ -192,6 +192,34 @@ namespace PostalCW
             }
         }
 
+        // == INSERT TRANSACTION INTO DATABASE == //
+        private int InsertIntoDatabase(Transfer transfer)
+        {
+            int newTransferID;
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "INSERT INTO CashTransferTbl (TransferDate, Amount, TransferType, TransferPurpose, SenderID, ReceiverName, ReceiverAddress, ReceiverContact, Status) " +
+                    "OUTPUT INSERTED.TransferID VALUES (@TransferDate, @Amount, @TransferType, @TransferPurpose, @SenderID, @ReceiverName, @ReceiverAddress, @ReceiverContact, @Status)", con);
+
+                cmd.Parameters.AddWithValue("@TransferDate", transfer.TransferDate);
+                cmd.Parameters.AddWithValue("@Amount", transfer.Amount);
+                cmd.Parameters.AddWithValue("@TransferType", transfer.TransferType);
+                cmd.Parameters.AddWithValue("@TransferPurpose", transfer.TransferPurpose);
+                cmd.Parameters.AddWithValue("@SenderID", transfer.SenderID);
+                cmd.Parameters.AddWithValue("@ReceiverName", transfer.ReceiverName);
+                cmd.Parameters.AddWithValue("@ReceiverAddress", transfer.ReceiverAddress);
+                cmd.Parameters.AddWithValue("@ReceiverContact", transfer.ReceiverContact);
+                cmd.Parameters.AddWithValue("@Status", transfer.Status);
+
+                newTransferID = (int)cmd.ExecuteScalar();
+            }
+
+            return newTransferID;
+        }
+
 
         // == SAVE BUTTON FUNCTIONALITY ==//
         private void saveButton_Click(object sender, EventArgs e)
