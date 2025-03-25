@@ -326,11 +326,11 @@ namespace PostalCW
     public class Client
     {
         public int ClientID { get; set; }
-        public string ClientName { get; set; }
-        public string ClientNID { get; set; }
-        public string ClientContact { get; set; }
-        public string Email { get; set; }
-        public string ClientAddress { get; set; }
-        public Image NIDpic { get; set; } 
+        public string? ClientName { get; set; }
+        public string? ClientNID { get; set; }
+        public string? ClientContact { get; set; }
+        public string? Email { get; set; }
+        public string? ClientAddress { get; set; }
+        public Image? NIDpic { get; set; } 
     }
 }
