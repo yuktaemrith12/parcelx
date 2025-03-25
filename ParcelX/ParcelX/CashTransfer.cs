@@ -187,13 +187,13 @@ namespace PostalCW
         public int TransferID { get; set; }
         public DateTime TransferDate { get; set; }
         public decimal Amount { get; set; }
-        public string TransferType { get; set; }
-        public string TransferPurpose { get; set; }
+        public string? TransferType { get; set; }
+        public string? TransferPurpose { get; set; }
         public int SenderID { get; set; }
-        public string ReceiverName { get; set; }
-        public string ReceiverAddress { get; set; }
-        public string ReceiverContact { get; set; }
-        public string Status { get; set; }
+        public string? ReceiverName { get; set; }
+        public string? ReceiverAddress { get; set; }
+        public string? ReceiverContact { get; set; }
+        public string? Status { get; set; }
     }
     
 }
