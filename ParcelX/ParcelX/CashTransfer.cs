@@ -25,7 +25,7 @@ namespace PostalCW
             InitializeComponent();
             InitializeSearchFeature(); // Set up search feature for Sender Name
             LoadFromDatabase(); // Load transactions from DB to hash table
-            //LoadTransactionData(); // Display transactions in DataGridView
+            LoadTransactionData(); // Display transactions in DataGridView
             InitializeDataGridView();
 
             this.FormBorderStyle = FormBorderStyle.None;
@@ -43,7 +43,7 @@ namespace PostalCW
 
             // Load transactions to display them in DataGridView
             LoadFromDatabase();
-            //LoadTransactionData();
+            LoadTransactionData();
         }
 
         private void ApplyRoundedEdges(Control control, int radius)
@@ -165,7 +165,32 @@ namespace PostalCW
             }
         }
 
+        // == LOAD TRANSACTIONS INTO DATA GRID VIEW ==
+        private void LoadTransactionData()
+        {
+            if (dataGridTransfer.Columns.Count == 0)
+            {
+                InitializeDataGridView();  
+            }
 
+            dataGridTransfer.Rows.Clear();  
+
+            foreach (Transfer transaction in transferTable.GetAll())
+            {
+                dataGridTransfer.Rows.Add(
+                    transaction.TransferID,
+                    transaction.TransferDate.ToShortDateString(),
+                    transaction.Amount,
+                    transaction.TransferType,  
+                    transaction.TransferPurpose,  
+                    transaction.SenderID,
+                    transaction.ReceiverName,
+                    transaction.ReceiverAddress,
+                    transaction.ReceiverContact,
+                    transaction.Status
+                );
+            }
+        }
 
 
         // == SAVE BUTTON FUNCTIONALITY ==//
