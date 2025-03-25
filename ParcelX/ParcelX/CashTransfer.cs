@@ -308,9 +308,25 @@ namespace PostalCW
         // == EDIT BUTTON == // 
         private void editButton_Click(object sender, EventArgs e)
         {
+            if (dataGridTransfer.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a transaction to edit.");
+                return;
+            }
 
+            // Get selected row data
+            selectedTransferID = Convert.ToInt32(dataGridTransfer.SelectedRows[0].Cells["TransferID"].Value);
+
+            Amount.Text = dataGridTransfer.SelectedRows[0].Cells["Amount"].Value.ToString();
+            TransactionType.Text = dataGridTransfer.SelectedRows[0].Cells["TransferType"].Value.ToString();  
+            Description.Text = dataGridTransfer.SelectedRows[0].Cells["TransferPurpose"].Value.ToString();  
+            senderID.Text = dataGridTransfer.SelectedRows[0].Cells["SenderID"].Value.ToString();
+            transferDate.Value = Convert.ToDateTime(dataGridTransfer.SelectedRows[0].Cells["TransferDate"].Value);
+            receiverName.Text = dataGridTransfer.SelectedRows[0].Cells["ReceiverName"].Value.ToString();
+            receiverContact.Text = dataGridTransfer.SelectedRows[0].Cells["ReceiverContact"].Value.ToString();
+            receiverAddress.Text = dataGridTransfer.SelectedRows[0].Cells["ReceiverAddress"].Value.ToString();
+            TransactionStatus.Text = dataGridTransfer.SelectedRows[0].Cells["Status"].Value.ToString();
         }
-
 
         // == DELETE BUTTON ==
         private void deleteButton_Click(object sender, EventArgs e)
