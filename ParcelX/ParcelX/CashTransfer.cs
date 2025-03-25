@@ -165,6 +165,8 @@ namespace PostalCW
             }
         }
 
+        // == DATABASE RELATED FUNCTIONS ==
+
         // == LOAD TRANSACTIONS INTO DATA GRID VIEW ==
         private void LoadTransactionData()
         {
@@ -248,10 +250,56 @@ namespace PostalCW
         }
 
 
+        // == BUTTONS ==
+        
         // == SAVE BUTTON FUNCTIONALITY ==//
         private void saveButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(Amount.Text) ||
+                string.IsNullOrWhiteSpace(senderID.Text) ||
+                string.IsNullOrWhiteSpace(receiverName.Text) ||
+                string.IsNullOrWhiteSpace(receiverAddress.Text))
+            {
+                MessageBox.Show("Incomplete Data. Please fill all fields.");
+                return;
+            }
 
+            Transfer newTransfer = new Transfer
+            {
+                TransferID = selectedTransferID,
+                TransferDate = transferDate.Value,
+                Amount = Convert.ToInt32(Amount.Text), 
+                TransferType = TransactionType.Text,
+                TransferPurpose = Description.Text,
+                SenderID = Convert.ToInt32(senderID.Text),
+                ReceiverName = receiverName.Text,
+                ReceiverAddress = receiverAddress.Text,
+                ReceiverContact = receiverContact.Text,
+                Status = TransactionStatus.Text
+            };
+
+            try
+            {
+                if (selectedTransferID == -1) // New transaction
+                {
+                    newTransfer.TransferID = InsertIntoDatabase(newTransfer);
+                    transferTable.Insert(newTransfer.TransferID, newTransfer);
+                }
+                else // Editing an existing transaction
+                {
+                    UpdateDatabase(newTransfer);
+                    transferTable.Remove(selectedTransferID);
+                    transferTable.Insert(newTransfer.TransferID, newTransfer);
+                }
+
+                MessageBox.Show("Transaction saved successfully!");
+                LoadTransactionData(); // Refresh DataGridView
+                ResetFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
 
