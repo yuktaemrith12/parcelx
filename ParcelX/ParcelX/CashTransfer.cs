@@ -331,7 +331,33 @@ namespace PostalCW
         // == DELETE BUTTON ==
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            if (dataGridTransfer.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a transaction to delete.");
+                return;
+            }
 
+            int transferID = Convert.ToInt32(dataGridTransfer.SelectedRows[0].Cells["TransferID"].Value);
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("DELETE FROM CashTransferTbl WHERE TransferID = @TransferID", con);
+                    cmd.Parameters.AddWithValue("@TransferID", transferID);
+                    cmd.ExecuteNonQuery();
+                }
+
+                transferTable.Remove(transferID); // Remove from HashTable
+
+                MessageBox.Show("Transaction Deleted Successfully!");
+                LoadTransactionData(); // Refresh DataGridView
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
 
@@ -359,7 +385,7 @@ namespace PostalCW
 
     }
 
-        // Transfer Class
+    // Transfer Class
     public class Transfer
     {
         public int TransferID { get; set; }
