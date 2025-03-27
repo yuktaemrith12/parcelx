@@ -81,7 +81,7 @@ namespace PostalCW
                 // Load names into ComboBox & AutoComplete
                 while (reader.Read())
                 {
-                    string clientName = reader["ClientName"].ToString();
+                    string? clientName = reader["ClientName"].ToString();
                     int clientID = Convert.ToInt32(reader["ClientID"]);
 
                     senderNamesCollection.Add(clientName);
@@ -112,7 +112,7 @@ namespace PostalCW
                 // Load officer names into ComboBox & AutoComplete
                 while (reader.Read())
                 {
-                    string officerNameValue = reader["OfficerName"].ToString();
+                    string? officerNameValue = reader["OfficerName"].ToString();
                     int officerIDValue = Convert.ToInt32(reader["OfficerID"]);
 
                     officerNamesCollection.Add(officerNameValue);
@@ -413,7 +413,7 @@ namespace PostalCW
         }
 
         // Fetch Sender Name from DB based on Sender ID
-        private string GetSenderNameByID(int senderID)
+        private string? GetSenderNameByID(int senderID)
         {
             using (SqlConnection con = new SqlConnection(Con.ConnectionString))
             {
@@ -427,7 +427,7 @@ namespace PostalCW
         }
 
         // Fetch Officer Name from DB based on Officer ID
-        private string GetOfficerNameByID(int officerID)
+        private string? GetOfficerNameByID(int officerID)
         {
             using (SqlConnection con = new SqlConnection(Con.ConnectionString))
             {
@@ -508,15 +508,15 @@ namespace PostalCW
     public class PackageData
     {
         public int PackageID { get; set; }
-        public string Dimension { get; set; }
+        public string? Dimension { get; set; }
         public int Weight { get; set; }
-        public string Priority { get; set; }
-        public string Content { get; set; }
+        public string? Priority { get; set; }
+        public string? Content { get; set; }
         public int? SenderID { get; set; }   
         public DateTime DropDate { get; set; }
-        public string ReceiverName { get; set; }
-        public string ReceiverContact { get; set; }
-        public string ReceiverAddress { get; set; }
+        public string? ReceiverName { get; set; }
+        public string? ReceiverContact { get; set; }
+        public string? ReceiverAddress { get; set; }
         public int? OfficerID { get; set; }  
     }
 
