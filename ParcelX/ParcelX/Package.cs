@@ -305,8 +305,79 @@ namespace PostalCW
         // == SAVE BUTTON FUNCTIONALITY ==
         private void saveButton_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(Dimension.Text) ||
+                string.IsNullOrWhiteSpace(Weight.Text) ||
+                string.IsNullOrWhiteSpace(Priority.Text) ||
+                string.IsNullOrWhiteSpace(Content.Text) ||
+                string.IsNullOrWhiteSpace(SenderID.Text) ||
+                string.IsNullOrWhiteSpace(ReceiverName.Text) ||
+                string.IsNullOrWhiteSpace(ReceiverAddress.Text) ||
+                string.IsNullOrWhiteSpace(ReceiverContact.Text) ||
+                string.IsNullOrWhiteSpace(OfficerID.Text))
+            {
+                MessageBox.Show("Incomplete Data. Please fill all fields.");
+                return;
+            }
+
+            PackageData newPackage = new PackageData
+            {
+                PackageID = selectedPackageID, 
+                Dimension = Dimension.Text,
+                Weight = Convert.ToInt32(Weight.Text),
+                Priority = Priority.Text,
+                Content = Content.Text,
+                SenderID = Convert.ToInt32(SenderID.Text),
+                DropDate = DropDate.Value,
+                ReceiverName = ReceiverName.Text,
+                ReceiverAddress = ReceiverAddress.Text,
+                ReceiverContact = ReceiverContact.Text,
+                OfficerID = Convert.ToInt32(OfficerID.Text)
+            };
+
+            try
+            {
+                if (selectedPackageID == -1) // New package entry
+                {
+                    newPackage.PackageID = InsertIntoDatabase(newPackage);
+                    packageTable.Insert(newPackage.PackageID, newPackage);
+                }
+                else // Editing an existing package
+                {
+                    UpdateDatabase(newPackage);
+                    packageTable.Remove(selectedPackageID);
+                    packageTable.Insert(newPackage.PackageID, newPackage);
+                }
+
+                MessageBox.Show("Package saved successfully!");
+                LoadPackageData(); // Refresh DataGridView
+                ResetFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
+
+        private void ResetFields()
+        {
+            selectedPackageID = -1;
+            Dimension.Clear();
+            Weight.Clear();
+            Priority.SelectedIndex = -1;
+            Content.Clear();
+
+            SenderName.Text = "";
+            SenderID.Clear();
+            DropDate.Value = DateTime.Now;
+
+            ReceiverName.Clear();
+            ReceiverContact.Clear();
+            ReceiverAddress.Clear();
+
+            OfficerName.Text = "";
+            OfficerID.Clear();
+        }
+
 
 
 
