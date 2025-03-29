@@ -271,6 +271,34 @@ namespace PostalCW
             return newPackageID;
         }
 
+        // == UPDATE PACKAGE IN DATABASE ==
+        private void UpdateDatabase(PackageData package)
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE PackageTbl SET Dimension=@Dimension, Weight=@Weight, Priority=@Priority, " +
+                    "Content=@Content, SenderID=@SenderID, DropDate=@DropDate, ReceiverName=@ReceiverName, " +
+                    "ReceiverAddress=@ReceiverAddress, ReceiverContact=@ReceiverContact, OfficerID=@OfficerID " +
+                    "WHERE PackageID=@PackageID", con);
+
+                cmd.Parameters.AddWithValue("@PackageID", package.PackageID);
+                cmd.Parameters.AddWithValue("@Dimension", package.Dimension);
+                cmd.Parameters.AddWithValue("@Weight", package.Weight);
+                cmd.Parameters.AddWithValue("@Priority", package.Priority);
+                cmd.Parameters.AddWithValue("@Content", package.Content);
+                cmd.Parameters.AddWithValue("@SenderID", package.SenderID);
+                cmd.Parameters.AddWithValue("@DropDate", package.DropDate);
+                cmd.Parameters.AddWithValue("@ReceiverName", package.ReceiverName);
+                cmd.Parameters.AddWithValue("@ReceiverAddress", package.ReceiverAddress);
+                cmd.Parameters.AddWithValue("@ReceiverContact", package.ReceiverContact);
+                cmd.Parameters.AddWithValue("@OfficerID", package.OfficerID);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
 
 
 
