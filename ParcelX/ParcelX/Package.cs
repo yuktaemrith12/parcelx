@@ -467,7 +467,33 @@ namespace PostalCW
         // == DELETE BUTTON==
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            if (dataGridViewPackage.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a package to delete.");
+                return;
+            }
 
+            int packageID = Convert.ToInt32(dataGridViewPackage.SelectedRows[0].Cells["PackageID"].Value);
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("DELETE FROM PackageTbl WHERE PackageID = @PackageID", con);
+                    cmd.Parameters.AddWithValue("@PackageID", packageID);
+                    cmd.ExecuteNonQuery();
+                }
+
+                packageTable.Remove(packageID); // Remove from HashTable
+
+                MessageBox.Show("Package Deleted Successfully!");
+                LoadPackageData(); // Refresh DataGridView
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
 
