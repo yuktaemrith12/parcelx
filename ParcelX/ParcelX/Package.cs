@@ -15,6 +15,10 @@ namespace PostalCW
         // Database connection
         private SqlConnection Con = new SqlConnection(@"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
+        // Hash Table 
+        private HashTable<PackageData> packageTable = new HashTable<PackageData>();
+        private int selectedPackageID = -1; 
+
 
         public Package()
         {
@@ -117,6 +121,21 @@ namespace PostalCW
 
         }
 
+    }
+
+        public class PackageData
+    {
+        public int PackageID { get; set; }
+        public string? Dimension { get; set; }
+        public int Weight { get; set; }
+        public string? Priority { get; set; }
+        public string? Content { get; set; }
+        public int? SenderID { get; set; }   
+        public DateTime DropDate { get; set; }
+        public string? ReceiverName { get; set; }
+        public string? ReceiverContact { get; set; }
+        public string? ReceiverAddress { get; set; }
+        public int? OfficerID { get; set; }  
     }
 
 
