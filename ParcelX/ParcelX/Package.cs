@@ -384,9 +384,84 @@ namespace PostalCW
         // == EDIT BUTTON ==
         private void editButton_Click(object sender, EventArgs e)
         {
-            
+            if (dataGridViewPackage.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a package to edit.");
+                return;
+            }
+
+            // Get selected row data
+            selectedPackageID = Convert.ToInt32(dataGridViewPackage.SelectedRows[0].Cells["PackageID"].Value);
+
+            Dimension.Text = dataGridViewPackage.SelectedRows[0].Cells["Dimension"]?.Value?.ToString() ?? "";
+            Weight.Text = dataGridViewPackage.SelectedRows[0].Cells["Weight"]?.Value?.ToString() ?? "";
+            Priority.Text = dataGridViewPackage.SelectedRows[0].Cells["Priority"]?.Value?.ToString() ?? "";
+            Content.Text = dataGridViewPackage.SelectedRows[0].Cells["Content"]?.Value?.ToString() ?? "";
+
+            // Handle SenderID
+            SenderID.Text = dataGridViewPackage.SelectedRows[0].Cells["SenderID"]?.Value?.ToString() ?? "";
+            if (int.TryParse(SenderID.Text, out int senderID))
+            {
+                SenderName.Text = GetSenderNameByID(senderID);
+            }
+            else
+            {
+                SenderName.Text = "Unknown Sender";  // NULL values
+            }
+
+            // Handle Drop Date safely
+            if (DateTime.TryParse(dataGridViewPackage.SelectedRows[0].Cells["DropDate"]?.Value?.ToString(), out DateTime dropDate))
+            {
+                DropDate.Value = dropDate;
+            }
+            else
+            {
+                DropDate.Value = DateTime.Now;  
+            }
+
+            ReceiverName.Text = dataGridViewPackage.SelectedRows[0].Cells["ReceiverName"]?.Value?.ToString() ?? "";
+            ReceiverContact.Text = dataGridViewPackage.SelectedRows[0].Cells["ReceiverContact"]?.Value?.ToString() ?? "";
+            ReceiverAddress.Text = dataGridViewPackage.SelectedRows[0].Cells["ReceiverAddress"]?.Value?.ToString() ?? "";
+
+            // Handle OfficerID
+            OfficerID.Text = dataGridViewPackage.SelectedRows[0].Cells["OfficerID"]?.Value?.ToString() ?? "";
+            if (int.TryParse(OfficerID.Text, out int officerID))
+            {
+                OfficerName.Text = GetOfficerNameByID(officerID);
+            }
+            else
+            {
+                OfficerName.Text = "Unknown Officer";  // NULL values
+            }
         }
 
+        // Fetch Sender Name from DB based on Sender ID
+        private string? GetSenderNameByID(int senderID)
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT ClientName FROM ClientsTbl WHERE ClientID = @SenderID", con);
+                cmd.Parameters.AddWithValue("@SenderID", senderID); // ✅ senderID is an integer
+
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "Unknown Sender";
+            }
+        }
+
+        // Fetch Officer Name from DB based on Officer ID
+        private string? GetOfficerNameByID(int officerID)
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT OfficerName FROM PostmanTbl WHERE OfficerID = @OfficerID", con);
+                cmd.Parameters.AddWithValue("@OfficerID", officerID); // ✅ officerID is an integer
+
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "Unknown Officer";
+            }
+        }
 
 
         // == DELETE BUTTON==
