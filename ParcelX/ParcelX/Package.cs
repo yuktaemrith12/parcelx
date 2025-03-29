@@ -25,7 +25,7 @@ namespace PostalCW
             InitializeComponent();
             InitializeSearchFeature(); // Setup search features
             InitializeDataGridView(); // Ensure columns exist
-            //LoadFromDatabase(); // Load transactions from DB
+            LoadFromDatabase(); // Load transactions from DB
             //LoadPackageData(); // Display transactions in DataGridView
 
             this.FormBorderStyle = FormBorderStyle.None;
@@ -180,6 +180,40 @@ namespace PostalCW
                 OfficerID.Text = (result != null) ? result.ToString() : "";
             }
         }
+
+        // == LOAD PACKAGES FROM SQL DATABASE INTO HASH TABLE ==
+        private void LoadFromDatabase()
+        {
+            packageTable = new HashTable<PackageData>(); // Initialize HashTable
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM PackageTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    PackageData package = new PackageData
+                    {
+                        PackageID = reader.GetInt32(0),
+                        Dimension = reader.GetString(1),
+                        Weight = reader.GetInt32(2),
+                        Priority = reader.GetString(3),
+                        Content = reader.GetString(4),
+                        SenderID = reader.IsDBNull(5) ? (int?)null : reader.GetInt32(5),  
+                        DropDate = reader.GetDateTime(6),
+                        ReceiverName = reader.GetString(7),
+                        ReceiverContact = reader.GetString(8),
+                        ReceiverAddress = reader.GetString(9),
+                        OfficerID = reader.IsDBNull(10) ? (int?)null : reader.GetInt32(10)  
+                    };
+
+                    packageTable.Insert(package.PackageID, package);
+                }
+            }
+        }
+
 
 
 
