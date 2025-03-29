@@ -57,30 +57,51 @@ namespace PostalCW
         //  Package Form
         private void PackagePic_Click(object sender, EventArgs e)
         {
-            
+            Package packageForm = new Package();
+            packageForm.Show();
         }
 
         //  Clients Form
         private void ClientPic_Click(object sender, EventArgs e)
         {
-            
+            Clients clientForm = new Clients();
+            clientForm.Show();
         }
 
         //  Cash Transfer Form
         private void TransferPic_Click(object sender, EventArgs e)
         {
-            
+            CashTransfer transferForm = new CashTransfer();
+            transferForm.Show();
         }
 
         //  Postman Form
         private void PostmanPic_Click(object sender, EventArgs e)
         {
-           
+            Postman postmanForm = new Postman();
+            postmanForm.Show();
         }
 
         private void LogoutPic_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                using (SqlConnection con = new SqlConnection(Program.connectionString))
+                {
+                    con.Open();
+
+                    // Delete all data from PostmanTbl
+                    SqlCommand cmd = new SqlCommand("DELETE FROM PostmanTbl", con);
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("All data has been removed. Logging out...", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit(); // Close application
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error during logout: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
     }
