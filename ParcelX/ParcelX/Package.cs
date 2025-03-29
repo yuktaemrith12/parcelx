@@ -242,6 +242,35 @@ namespace PostalCW
             }
         }
 
+        // == INSERT TRANSACTION INTO DATABASE ==
+        private int InsertIntoDatabase(PackageData package)
+        {
+            int newPackageID;
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "INSERT INTO PackageTbl (Dimension, Weight, Priority, Content, SenderID, DropDate, ReceiverName, ReceiverContact, ReceiverAddress, OfficerID) " +
+                    "OUTPUT INSERTED.PackageID VALUES (@Dimension, @Weight, @Priority, @Content, @SenderID, @DropDate, @ReceiverName, @ReceiverContact, @ReceiverAddress, @OfficerID)", con);
+
+                cmd.Parameters.AddWithValue("@Dimension", package.Dimension);
+                cmd.Parameters.AddWithValue("@Weight", package.Weight);
+                cmd.Parameters.AddWithValue("@Priority", package.Priority);
+                cmd.Parameters.AddWithValue("@Content", package.Content);
+                cmd.Parameters.AddWithValue("@SenderID", package.SenderID);
+                cmd.Parameters.AddWithValue("@DropDate", package.DropDate);
+                cmd.Parameters.AddWithValue("@ReceiverName", package.ReceiverName);
+                cmd.Parameters.AddWithValue("@ReceiverContact", package.ReceiverContact);
+                cmd.Parameters.AddWithValue("@ReceiverAddress", package.ReceiverAddress);
+                cmd.Parameters.AddWithValue("@OfficerID", package.OfficerID);
+
+                newPackageID = (int)cmd.ExecuteScalar();
+            }
+
+            return newPackageID;
+        }
+
 
 
 
