@@ -500,7 +500,9 @@ namespace PostalCW
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();  // Hide the current form
+            Menu menuForm = new Menu();
+            menuForm.Show();  // Show the Menu form
         }
 
     }
