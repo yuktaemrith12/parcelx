@@ -26,7 +26,7 @@ namespace PostalCW
             InitializeSearchFeature(); // Setup search features
             InitializeDataGridView(); // Ensure columns exist
             LoadFromDatabase(); // Load transactions from DB
-            //LoadPackageData(); // Display transactions in DataGridView
+            LoadPackageData(); // Display transactions in DataGridView
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -45,8 +45,8 @@ namespace PostalCW
             ApplyRoundedEdges(panel7, 30);
             ApplyRoundedEdges(panel8, 30);
 
-            //LoadFromDatabase(); 
-            //LoadPackageData();  
+            LoadFromDatabase(); 
+            LoadPackageData();  
         }
 
         private void ApplyRoundedEdges(Control control, int radius)
@@ -214,6 +214,33 @@ namespace PostalCW
             }
         }
 
+        // == LOAD PACKAGES INTO DATA GRID VIEW ==
+        private void LoadPackageData()
+        {
+            if (dataGridViewPackage.Columns.Count == 0)
+            {
+                InitializeDataGridView();  
+            }
+
+            dataGridViewPackage.Rows.Clear();  
+
+            foreach (PackageData package in packageTable.GetAll())
+            {
+                dataGridViewPackage.Rows.Add(
+                    package.PackageID,                      
+                    package.Dimension,                     
+                    package.Weight,                        
+                    package.Priority,                      
+                    package.Content,                        
+                    package.SenderID.HasValue ? package.SenderID.Value.ToString() : "N/A", 
+                    package.DropDate.ToShortDateString(),   
+                    package.ReceiverName,                   
+                    package.ReceiverContact,                
+                    package.ReceiverAddress,               
+                    package.OfficerID.HasValue ? package.OfficerID.Value.ToString() : "N/A"  
+                );
+            }
+        }
 
 
 
