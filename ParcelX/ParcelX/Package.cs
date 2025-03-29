@@ -23,7 +23,7 @@ namespace PostalCW
         public Package()
         {
             InitializeComponent();
-            //InitializeSearchFeature(); // Setup search features
+            InitializeSearchFeature(); // Setup search features
             InitializeDataGridView(); // Ensure columns exist
             //LoadFromDatabase(); // Load transactions from DB
             //LoadPackageData(); // Display transactions in DataGridView
@@ -87,6 +87,98 @@ namespace PostalCW
             dataGridViewPackage.Columns[10].Name = "OfficerID";       
 
             dataGridViewPackage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+        }
+
+        private void InitializeSearchFeature()
+        {
+            // === SENDER SEARCH FUNCTIONALITY === //
+            SenderName.DropDownStyle = ComboBoxStyle.DropDown; 
+            SenderName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            SenderName.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            AutoCompleteStringCollection senderNamesCollection = new AutoCompleteStringCollection();
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT ClientID, ClientName FROM ClientsTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Load names into ComboBox & AutoComplete
+                while (reader.Read())
+                {
+                    string? clientName = reader["ClientName"].ToString();
+                    int clientID = Convert.ToInt32(reader["ClientID"]);
+
+                    senderNamesCollection.Add(clientName);
+                    SenderName.Items.Add(clientName); // Add names to ComboBox
+                }
+            }
+
+            SenderName.AutoCompleteCustomSource = senderNamesCollection;
+
+            // Update Sender ID on selection change
+            SenderName.SelectedIndexChanged += (s, e) => UpdateSenderID();
+            SenderName.TextChanged += (s, e) => UpdateSenderID();
+
+
+            // === OFFICER SEARCH FUNCTIONALITY ===
+            OfficerName.DropDownStyle = ComboBoxStyle.DropDown;
+            OfficerName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            OfficerName.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            AutoCompleteStringCollection officerNamesCollection = new AutoCompleteStringCollection();
+
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT OfficerID, OfficerName FROM PostmanTbl", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Load officer names into ComboBox & AutoComplete
+                while (reader.Read())
+                {
+                    string? officerNameValue = reader["OfficerName"].ToString();
+                    int officerIDValue = Convert.ToInt32(reader["OfficerID"]);
+
+                    officerNamesCollection.Add(officerNameValue);
+                    OfficerName.Items.Add(officerNameValue); // Add names to ComboBox
+                }
+            }
+
+            OfficerName.AutoCompleteCustomSource = officerNamesCollection;
+
+            // Update Officer ID on selection change
+            OfficerName.SelectedIndexChanged += (s, e) => UpdateOfficerID();
+            OfficerName.TextChanged += (s, e) => UpdateOfficerID();
+        }
+
+        // Helper method to update Sender ID when a name is selected
+        private void UpdateSenderID()
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT ClientID FROM ClientsTbl WHERE ClientName = @ClientName", con);
+                cmd.Parameters.AddWithValue("@ClientName", SenderName.Text);
+
+                object result = cmd.ExecuteScalar();
+                SenderID.Text = (result != null) ? result.ToString() : "";
+            }
+        }
+
+        // Helper method to update Officer ID when a name is selected
+        private void UpdateOfficerID()
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT OfficerID FROM PostmanTbl WHERE OfficerName = @OfficerName", con);
+                cmd.Parameters.AddWithValue("@OfficerName", OfficerName.Text);
+
+                object result = cmd.ExecuteScalar();
+                OfficerID.Text = (result != null) ? result.ToString() : "";
+            }
         }
 
 
