@@ -19,7 +19,6 @@ namespace PostalCW
         private HashTable<Transfer> transferTable = new HashTable<Transfer>();
         private int selectedTransferID = -1; 
 
-
         public CashTransfer()
         {
             InitializeComponent();
@@ -60,6 +59,7 @@ namespace PostalCW
 
             control.Region = new Region(path);
         }
+
 
         // == SEARCH FEATURE ==//
         private void InitializeSearchFeature()
@@ -109,29 +109,6 @@ namespace PostalCW
         }
 
 
-
-
-        // Define columns for the DataGridView
-        private void InitializeDataGridView()
-        {
-            dataGridTransfer.Columns.Clear();
-
-            dataGridTransfer.ColumnCount = 10; 
-
-            dataGridTransfer.Columns[0].Name = "TransferID";
-            dataGridTransfer.Columns[1].Name = "TransferDate";
-            dataGridTransfer.Columns[2].Name = "Amount";
-            dataGridTransfer.Columns[3].Name = "TransferType";
-            dataGridTransfer.Columns[4].Name = "TransferPurpose";
-            dataGridTransfer.Columns[5].Name = "SenderID";
-            dataGridTransfer.Columns[6].Name = "ReceiverName";
-            dataGridTransfer.Columns[7].Name = "ReceiverAddress";
-            dataGridTransfer.Columns[8].Name = "ReceiverContact";
-            dataGridTransfer.Columns[9].Name = "Status"; 
-
-            dataGridTransfer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-        }
-
         // == LOAD TRANSACTIONS FROM SQL DATABASE INTO HASH TABLE ==
         private void LoadFromDatabase()
         {
@@ -165,8 +142,6 @@ namespace PostalCW
             }
         }
 
-        // == DATABASE RELATED FUNCTIONS ==
-
         // == LOAD TRANSACTIONS INTO DATA GRID VIEW ==
         private void LoadTransactionData()
         {
@@ -193,6 +168,32 @@ namespace PostalCW
                 );
             }
         }
+
+
+        // Define columns for the DataGridView
+        private void InitializeDataGridView()
+        {
+            dataGridTransfer.Columns.Clear();
+
+            dataGridTransfer.ColumnCount = 10; 
+
+            dataGridTransfer.Columns[0].Name = "TransferID";
+            dataGridTransfer.Columns[1].Name = "TransferDate";
+            dataGridTransfer.Columns[2].Name = "Amount";
+            dataGridTransfer.Columns[3].Name = "TransferType";
+            dataGridTransfer.Columns[4].Name = "TransferPurpose";
+            dataGridTransfer.Columns[5].Name = "SenderID";
+            dataGridTransfer.Columns[6].Name = "ReceiverName";
+            dataGridTransfer.Columns[7].Name = "ReceiverAddress";
+            dataGridTransfer.Columns[8].Name = "ReceiverContact";
+            dataGridTransfer.Columns[9].Name = "Status"; 
+
+            dataGridTransfer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+
+
+
 
         // == INSERT TRANSACTION INTO DATABASE == //
         private int InsertIntoDatabase(Transfer transfer)
@@ -222,36 +223,6 @@ namespace PostalCW
             return newTransferID;
         }
 
-        // == UPDATE TRANSACTION IN DATABASE == //
-        private void UpdateDatabase(Transfer transfer)
-        {
-            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand(
-                    "UPDATE CashTransferTbl SET TransferDate=@TransferDate, Amount=@Amount, TransferType=@TransferType, " +
-                    "TransferPurpose=@TransferPurpose, SenderID=@SenderID, ReceiverName=@ReceiverName, " +
-                    "ReceiverAddress=@ReceiverAddress, ReceiverContact=@ReceiverContact, Status=@Status " +
-                    "WHERE TransferID=@TransferID", con);
-
-                cmd.Parameters.AddWithValue("@TransferID", transfer.TransferID);
-                cmd.Parameters.AddWithValue("@TransferDate", transfer.TransferDate);
-                cmd.Parameters.AddWithValue("@Amount", transfer.Amount);
-                cmd.Parameters.AddWithValue("@TransferType", transfer.TransferType);
-                cmd.Parameters.AddWithValue("@TransferPurpose", transfer.TransferPurpose);
-                cmd.Parameters.AddWithValue("@SenderID", transfer.SenderID);
-                cmd.Parameters.AddWithValue("@ReceiverName", transfer.ReceiverName);
-                cmd.Parameters.AddWithValue("@ReceiverAddress", transfer.ReceiverAddress);
-                cmd.Parameters.AddWithValue("@ReceiverContact", transfer.ReceiverContact);
-                cmd.Parameters.AddWithValue("@Status", transfer.Status);
-
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-
-        // == BUTTONS ==
-        
         // == SAVE BUTTON FUNCTIONALITY ==//
         private void saveButton_Click(object sender, EventArgs e)
         {
@@ -303,7 +274,32 @@ namespace PostalCW
         }
 
 
-  
+        // == UPDATE TRANSACTION IN DATABASE == //
+        private void UpdateDatabase(Transfer transfer)
+        {
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE CashTransferTbl SET TransferDate=@TransferDate, Amount=@Amount, TransferType=@TransferType, " +
+                    "TransferPurpose=@TransferPurpose, SenderID=@SenderID, ReceiverName=@ReceiverName, " +
+                    "ReceiverAddress=@ReceiverAddress, ReceiverContact=@ReceiverContact, Status=@Status " +
+                    "WHERE TransferID=@TransferID", con);
+
+                cmd.Parameters.AddWithValue("@TransferID", transfer.TransferID);
+                cmd.Parameters.AddWithValue("@TransferDate", transfer.TransferDate);
+                cmd.Parameters.AddWithValue("@Amount", transfer.Amount);
+                cmd.Parameters.AddWithValue("@TransferType", transfer.TransferType);
+                cmd.Parameters.AddWithValue("@TransferPurpose", transfer.TransferPurpose);
+                cmd.Parameters.AddWithValue("@SenderID", transfer.SenderID);
+                cmd.Parameters.AddWithValue("@ReceiverName", transfer.ReceiverName);
+                cmd.Parameters.AddWithValue("@ReceiverAddress", transfer.ReceiverAddress);
+                cmd.Parameters.AddWithValue("@ReceiverContact", transfer.ReceiverContact);
+                cmd.Parameters.AddWithValue("@Status", transfer.Status);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
 
         // == EDIT BUTTON == // 
         private void editButton_Click(object sender, EventArgs e)
@@ -327,6 +323,7 @@ namespace PostalCW
             receiverAddress.Text = dataGridTransfer.SelectedRows[0].Cells["ReceiverAddress"].Value.ToString();
             TransactionStatus.Text = dataGridTransfer.SelectedRows[0].Cells["Status"].Value.ToString();
         }
+
 
         // == DELETE BUTTON ==
         private void deleteButton_Click(object sender, EventArgs e)
@@ -377,10 +374,11 @@ namespace PostalCW
             TransactionStatus.SelectedIndex = -1;
         }
 
-
         private void backBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();  // Hide the current form
+            Menu menuForm = new Menu();
+            menuForm.Show();  // Show the Menu form
         }
 
     }
@@ -391,13 +389,12 @@ namespace PostalCW
         public int TransferID { get; set; }
         public DateTime TransferDate { get; set; }
         public decimal Amount { get; set; }
-        public string? TransferType { get; set; }
-        public string? TransferPurpose { get; set; }
+        public string TransferType { get; set; }
+        public string TransferPurpose { get; set; }
         public int SenderID { get; set; }
-        public string? ReceiverName { get; set; }
-        public string? ReceiverAddress { get; set; }
-        public string? ReceiverContact { get; set; }
-        public string? Status { get; set; }
+        public string ReceiverName { get; set; }
+        public string ReceiverAddress { get; set; }
+        public string ReceiverContact { get; set; }
+        public string Status { get; set; }
     }
-    
 }

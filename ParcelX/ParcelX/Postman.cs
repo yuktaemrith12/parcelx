@@ -15,6 +15,7 @@ namespace PostalCW
         private HashTable<Officer> officerTable = new HashTable<Officer>();
         private int selectedOfficerID = -1;
         public string connectionString = @"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+
         public Postman()
         {
             InitializeComponent();
@@ -71,7 +72,7 @@ namespace PostalCW
 
             postmanDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-
+        
 
         // == LOAD OFFICERS FROM SQL DATABASE INTO HASH TABLE ==
         private void LoadFromDatabase()
@@ -272,7 +273,7 @@ namespace PostalCW
         }
 
 
-
+ 
         //SEARCH FUNCTIONALITY
         private void SearchIcon_Click(object sender, EventArgs e)
         {
@@ -350,18 +351,21 @@ namespace PostalCW
         //BACK BUTTON FUNCTIONALITY
         private void backBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();  // Hide the current form
+            Menu menuForm = new Menu();
+            menuForm.Show();  // Show the Menu form
         }
     }
-    public class Officer{
+
+    // Officer Class 
+    public class Officer
+    {
         public int OfficerID { get; set; }
-        public string? OfficerName { get; set; }
-        public string? OfficerAddress { get; set; }
-        public string? OfficerContact { get; set; }
+        public string OfficerName { get; set; }
+        public string OfficerAddress { get; set; }
+        public string OfficerContact { get; set; } 
         public DateTime HireDate { get; set; }
-        public string? Employment { get; set; }
-
+        public string Employment { get; set; }
     }
-
 
 }

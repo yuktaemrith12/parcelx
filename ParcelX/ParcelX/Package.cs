@@ -19,7 +19,6 @@ namespace PostalCW
         private HashTable<PackageData> packageTable = new HashTable<PackageData>();
         private int selectedPackageID = -1; 
 
-
         public Package()
         {
             InitializeComponent();
@@ -64,31 +63,6 @@ namespace PostalCW
             control.Region = new Region(path);
         }
 
-
-
-
-        // == DATAGRID ==
-        private void InitializeDataGridView()
-        {
-            dataGridViewPackage.Columns.Clear(); 
-
-            dataGridViewPackage.ColumnCount = 11; 
-
-            dataGridViewPackage.Columns[0].Name = "PackageID";
-            dataGridViewPackage.Columns[1].Name = "Dimension";
-            dataGridViewPackage.Columns[2].Name = "Weight";
-            dataGridViewPackage.Columns[3].Name = "Priority";
-            dataGridViewPackage.Columns[4].Name = "Content";
-            dataGridViewPackage.Columns[5].Name = "SenderID";         
-            dataGridViewPackage.Columns[6].Name = "DropDate";        
-            dataGridViewPackage.Columns[7].Name = "ReceiverName";
-            dataGridViewPackage.Columns[8].Name = "ReceiverContact";
-            dataGridViewPackage.Columns[9].Name = "ReceiverAddress";
-            dataGridViewPackage.Columns[10].Name = "OfficerID";       
-
-            dataGridViewPackage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
-        }
-
         private void InitializeSearchFeature()
         {
             // === SENDER SEARCH FUNCTIONALITY === //
@@ -107,7 +81,7 @@ namespace PostalCW
                 // Load names into ComboBox & AutoComplete
                 while (reader.Read())
                 {
-                    string? clientName = reader["ClientName"].ToString();
+                    string clientName = reader["ClientName"].ToString();
                     int clientID = Convert.ToInt32(reader["ClientID"]);
 
                     senderNamesCollection.Add(clientName);
@@ -138,7 +112,7 @@ namespace PostalCW
                 // Load officer names into ComboBox & AutoComplete
                 while (reader.Read())
                 {
-                    string? officerNameValue = reader["OfficerName"].ToString();
+                    string officerNameValue = reader["OfficerName"].ToString();
                     int officerIDValue = Convert.ToInt32(reader["OfficerID"]);
 
                     officerNamesCollection.Add(officerNameValue);
@@ -214,6 +188,7 @@ namespace PostalCW
             }
         }
 
+
         // == LOAD PACKAGES INTO DATA GRID VIEW ==
         private void LoadPackageData()
         {
@@ -241,6 +216,31 @@ namespace PostalCW
                 );
             }
         }
+
+
+
+        // == DATAGRID ==
+        private void InitializeDataGridView()
+        {
+            dataGridViewPackage.Columns.Clear(); 
+
+            dataGridViewPackage.ColumnCount = 11; 
+
+            dataGridViewPackage.Columns[0].Name = "PackageID";
+            dataGridViewPackage.Columns[1].Name = "Dimension";
+            dataGridViewPackage.Columns[2].Name = "Weight";
+            dataGridViewPackage.Columns[3].Name = "Priority";
+            dataGridViewPackage.Columns[4].Name = "Content";
+            dataGridViewPackage.Columns[5].Name = "SenderID";         
+            dataGridViewPackage.Columns[6].Name = "DropDate";        
+            dataGridViewPackage.Columns[7].Name = "ReceiverName";
+            dataGridViewPackage.Columns[8].Name = "ReceiverContact";
+            dataGridViewPackage.Columns[9].Name = "ReceiverAddress";
+            dataGridViewPackage.Columns[10].Name = "OfficerID";       
+
+            dataGridViewPackage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+        }
+
 
         // == INSERT TRANSACTION INTO DATABASE ==
         private int InsertIntoDatabase(PackageData package)
@@ -270,36 +270,6 @@ namespace PostalCW
 
             return newPackageID;
         }
-
-        // == UPDATE PACKAGE IN DATABASE ==
-        private void UpdateDatabase(PackageData package)
-        {
-            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand(
-                    "UPDATE PackageTbl SET Dimension=@Dimension, Weight=@Weight, Priority=@Priority, " +
-                    "Content=@Content, SenderID=@SenderID, DropDate=@DropDate, ReceiverName=@ReceiverName, " +
-                    "ReceiverAddress=@ReceiverAddress, ReceiverContact=@ReceiverContact, OfficerID=@OfficerID " +
-                    "WHERE PackageID=@PackageID", con);
-
-                cmd.Parameters.AddWithValue("@PackageID", package.PackageID);
-                cmd.Parameters.AddWithValue("@Dimension", package.Dimension);
-                cmd.Parameters.AddWithValue("@Weight", package.Weight);
-                cmd.Parameters.AddWithValue("@Priority", package.Priority);
-                cmd.Parameters.AddWithValue("@Content", package.Content);
-                cmd.Parameters.AddWithValue("@SenderID", package.SenderID);
-                cmd.Parameters.AddWithValue("@DropDate", package.DropDate);
-                cmd.Parameters.AddWithValue("@ReceiverName", package.ReceiverName);
-                cmd.Parameters.AddWithValue("@ReceiverAddress", package.ReceiverAddress);
-                cmd.Parameters.AddWithValue("@ReceiverContact", package.ReceiverContact);
-                cmd.Parameters.AddWithValue("@OfficerID", package.OfficerID);
-
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-
 
 
         // == SAVE BUTTON FUNCTIONALITY ==
@@ -358,27 +328,34 @@ namespace PostalCW
             }
         }
 
-        private void ResetFields()
+
+        // == UPDATE PACKAGE IN DATABASE ==
+        private void UpdateDatabase(PackageData package)
         {
-            selectedPackageID = -1;
-            Dimension.Clear();
-            Weight.Clear();
-            Priority.SelectedIndex = -1;
-            Content.Clear();
+            using (SqlConnection con = new SqlConnection(Con.ConnectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "UPDATE PackageTbl SET Dimension=@Dimension, Weight=@Weight, Priority=@Priority, " +
+                    "Content=@Content, SenderID=@SenderID, DropDate=@DropDate, ReceiverName=@ReceiverName, " +
+                    "ReceiverAddress=@ReceiverAddress, ReceiverContact=@ReceiverContact, OfficerID=@OfficerID " +
+                    "WHERE PackageID=@PackageID", con);
 
-            SenderName.Text = "";
-            SenderID.Clear();
-            DropDate.Value = DateTime.Now;
+                cmd.Parameters.AddWithValue("@PackageID", package.PackageID);
+                cmd.Parameters.AddWithValue("@Dimension", package.Dimension);
+                cmd.Parameters.AddWithValue("@Weight", package.Weight);
+                cmd.Parameters.AddWithValue("@Priority", package.Priority);
+                cmd.Parameters.AddWithValue("@Content", package.Content);
+                cmd.Parameters.AddWithValue("@SenderID", package.SenderID);
+                cmd.Parameters.AddWithValue("@DropDate", package.DropDate);
+                cmd.Parameters.AddWithValue("@ReceiverName", package.ReceiverName);
+                cmd.Parameters.AddWithValue("@ReceiverAddress", package.ReceiverAddress);
+                cmd.Parameters.AddWithValue("@ReceiverContact", package.ReceiverContact);
+                cmd.Parameters.AddWithValue("@OfficerID", package.OfficerID);
 
-            ReceiverName.Clear();
-            ReceiverContact.Clear();
-            ReceiverAddress.Clear();
-
-            OfficerName.Text = "";
-            OfficerID.Clear();
+                cmd.ExecuteNonQuery();
+            }
         }
-
-
 
 
         // == EDIT BUTTON ==
@@ -436,7 +413,7 @@ namespace PostalCW
         }
 
         // Fetch Sender Name from DB based on Sender ID
-        private string? GetSenderNameByID(int senderID)
+        private string GetSenderNameByID(int senderID)
         {
             using (SqlConnection con = new SqlConnection(Con.ConnectionString))
             {
@@ -450,7 +427,7 @@ namespace PostalCW
         }
 
         // Fetch Officer Name from DB based on Officer ID
-        private string? GetOfficerNameByID(int officerID)
+        private string GetOfficerNameByID(int officerID)
         {
             using (SqlConnection con = new SqlConnection(Con.ConnectionString))
             {
@@ -462,6 +439,9 @@ namespace PostalCW
                 return result != null ? result.ToString() : "Unknown Officer";
             }
         }
+
+
+
 
 
         // == DELETE BUTTON==
@@ -496,7 +476,25 @@ namespace PostalCW
             }
         }
 
+        private void ResetFields()
+        {
+            selectedPackageID = -1;
+            Dimension.Clear();
+            Weight.Clear();
+            Priority.SelectedIndex = -1;
+            Content.Clear();
 
+            SenderName.Text = "";
+            SenderID.Clear();
+            DropDate.Value = DateTime.Now;
+
+            ReceiverName.Clear();
+            ReceiverContact.Clear();
+            ReceiverAddress.Clear();
+
+            OfficerName.Text = "";
+            OfficerID.Clear();
+        }
 
         private void backBtn_Click(object sender, EventArgs e)
         {
@@ -507,21 +505,19 @@ namespace PostalCW
 
     }
 
-        public class PackageData
+    public class PackageData
     {
         public int PackageID { get; set; }
-        public string? Dimension { get; set; }
+        public string Dimension { get; set; }
         public int Weight { get; set; }
-        public string? Priority { get; set; }
-        public string? Content { get; set; }
+        public string Priority { get; set; }
+        public string Content { get; set; }
         public int? SenderID { get; set; }   
         public DateTime DropDate { get; set; }
-        public string? ReceiverName { get; set; }
-        public string? ReceiverContact { get; set; }
-        public string? ReceiverAddress { get; set; }
+        public string ReceiverName { get; set; }
+        public string ReceiverContact { get; set; }
+        public string ReceiverAddress { get; set; }
         public int? OfficerID { get; set; }  
     }
-
-
 
 }

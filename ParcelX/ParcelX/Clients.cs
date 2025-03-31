@@ -317,7 +317,9 @@ namespace PostalCW
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();  // Hide the current form
+            Menu menuForm = new Menu();
+            menuForm.Show();  // Show the Menu form
         }
 
     }
@@ -326,11 +328,11 @@ namespace PostalCW
     public class Client
     {
         public int ClientID { get; set; }
-        public string? ClientName { get; set; }
-        public string? ClientNID { get; set; }
-        public string? ClientContact { get; set; }
-        public string? Email { get; set; }
-        public string? ClientAddress { get; set; }
-        public Image? NIDpic { get; set; } 
+        public string ClientName { get; set; }
+        public string ClientNID { get; set; }
+        public string ClientContact { get; set; }
+        public string Email { get; set; }
+        public string ClientAddress { get; set; }
+        public Image NIDpic { get; set; } 
     }
 }
