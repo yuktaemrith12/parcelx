@@ -86,23 +86,24 @@ namespace PostalCW
         {
             try
             {
-                using (SqlConnection con = new SqlConnection(Program.connectionString))
+                DialogResult result = MessageBox.Show(
+                    "Are you sure you want to log out?",
+                    "Confirm Logout",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
                 {
-                    con.Open();
-
-                    // Delete all data from PostmanTbl
-                    SqlCommand cmd = new SqlCommand("DELETE FROM PostmanTbl", con);
-                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("You have been logged out safely. All data is preserved.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Application.Exit(); // Close application
                 }
-
-                MessageBox.Show("All data has been removed. Logging out...", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Application.Exit(); // Close application
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error during logout: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
     }
 }
