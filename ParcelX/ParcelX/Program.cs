@@ -15,7 +15,7 @@ namespace PostalCW
     internal static class Program
     {
         public static string connectionString = @"Data Source=YUK;Initial Catalog=ParcelX_dB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-        public static string dataFilePath = "C:\\Users\\yukta\\OneDrive - Middlesex University\\CSSE Year 2\\M3 Software Engineering Management and Development\\CW - PostalMangementSystem\\PostalCW\\PostalCW\\PostmanData.txt"; // Path to text file
+        public static string dataFilePath = ""; // Will be set via user input
 
         [STAThread]
         static void Main()
@@ -23,16 +23,20 @@ namespace PostalCW
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            LoadPostmanData(); //Load data from text file into DB
+            FilePath filePathForm = new FilePath();
+            DialogResult result = filePathForm.ShowDialog();
 
-            Application.Run(new Menu());
-
-            // Cleanup database on logout
-            DeletePostmanData();
+            if (result == DialogResult.OK || result == DialogResult.Ignore)
+            {
+                Application.Run(new Menu());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
-        // Load Data from Text File to Database
-        private static void LoadPostmanData()
+        public static void LoadPostmanData()
         {
             try
             {
@@ -46,41 +50,66 @@ namespace PostalCW
                 {
                     con.Open();
 
-                    // Clear the table first (To avoid duplicates if the program restarts)
-                    SqlCommand clearCmd = new SqlCommand("DELETE FROM PostmanTbl", con);
-                    clearCmd.ExecuteNonQuery();
+                    // Check if PostmanTbl has any data
+                    SqlCommand countCmd = new SqlCommand("SELECT COUNT(*) FROM PostmanTbl", con);
+                    int rowCount = (int)countCmd.ExecuteScalar();
 
-                    // Enable IDENTITY_INSERT to allow inserting OfficerID
-                    SqlCommand enableIdentityCmd = new SqlCommand("SET IDENTITY_INSERT PostmanTbl ON;", con);
-                    enableIdentityCmd.ExecuteNonQuery();
-
-                    // Read all lines from the text file
+                    // Read all lines from text file
                     string[] lines = File.ReadAllLines(dataFilePath);
-                    foreach (string line in lines)
+                    List<int> existingOfficerIDs = new List<int>();
+
+                    if (rowCount > 0)
                     {
-                        string[] data = line.Split(','); 
-
-                        if (data.Length == 6) 
+                        // Fetch existing OfficerIDs to check for duplicates
+                        SqlCommand fetchCmd = new SqlCommand("SELECT OfficerID FROM PostmanTbl", con);
+                        using (SqlDataReader reader = fetchCmd.ExecuteReader())
                         {
-                            using (SqlCommand insertCmd = new SqlCommand(@"
-                                INSERT INTO PostmanTbl (OfficerID, OfficerName, OfficerAddress, OfficerContact, HireDate, Employment)
-                                VALUES (@ID, @Name, @Address, @Contact, @HireDate, @Employment)", con))
+                            while (reader.Read())
                             {
-                                insertCmd.Parameters.AddWithValue("@ID", int.Parse(data[0]));  
-                                insertCmd.Parameters.AddWithValue("@Name", data[1]);
-                                insertCmd.Parameters.AddWithValue("@Address", data[2]);
-                                insertCmd.Parameters.AddWithValue("@Contact", data[3]);
-                                insertCmd.Parameters.AddWithValue("@HireDate", DateTime.Parse(data[4])); 
-                                insertCmd.Parameters.AddWithValue("@Employment", data[5]);
-
-                                insertCmd.ExecuteNonQuery();
+                                existingOfficerIDs.Add(reader.GetInt32(0));
                             }
                         }
                     }
 
-                    // Disable IDENTITY_INSERT after inserting data
+                    // Enable identity insert
+                    SqlCommand enableIdentityCmd = new SqlCommand("SET IDENTITY_INSERT PostmanTbl ON;", con);
+                    enableIdentityCmd.ExecuteNonQuery();
+
+                    int insertedCount = 0;
+
+                    foreach (string line in lines)
+                    {
+                        string[] data = line.Split(',');
+
+                        if (data.Length == 6)
+                        {
+                            int officerID = int.Parse(data[0]);
+
+                            // Insert only if not already in the table
+                            if (!existingOfficerIDs.Contains(officerID))
+                            {
+                                SqlCommand insertCmd = new SqlCommand(@"
+                                INSERT INTO PostmanTbl (OfficerID, OfficerName, OfficerAddress, OfficerContact, HireDate, Employment)
+                                VALUES (@ID, @Name, @Address, @Contact, @HireDate, @Employment)", con);
+
+                                insertCmd.Parameters.AddWithValue("@ID", officerID);
+                                insertCmd.Parameters.AddWithValue("@Name", data[1]);
+                                insertCmd.Parameters.AddWithValue("@Address", data[2]);
+                                insertCmd.Parameters.AddWithValue("@Contact", data[3]);
+                                insertCmd.Parameters.AddWithValue("@HireDate", DateTime.Parse(data[4]));
+                                insertCmd.Parameters.AddWithValue("@Employment", data[5]);
+
+                                insertCmd.ExecuteNonQuery();
+                                insertedCount++;
+                            }
+                        }
+                    }
+
+                    // Disable identity insert
                     SqlCommand disableIdentityCmd = new SqlCommand("SET IDENTITY_INSERT PostmanTbl OFF;", con);
                     disableIdentityCmd.ExecuteNonQuery();
+
+                    MessageBox.Show($"{insertedCount} new officer(s) added to the database.", "Data Load Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -89,24 +118,14 @@ namespace PostalCW
             }
         }
 
-        // Delete Data on Logout
-        private static void DeletePostmanData()
+        public static bool DatabaseHasPostmanData()
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                using (SqlConnection con = new SqlConnection(connectionString))
-                {
-                    con.Open();
-
-                    SqlCommand deleteCmd = new SqlCommand("DELETE FROM PostmanTbl;", con);
-                    deleteCmd.ExecuteNonQuery();
-                }
-
-                MessageBox.Show("All session data has been cleared. Logging out...");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error during logout: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM PostmanTbl", con);
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
             }
         }
     }

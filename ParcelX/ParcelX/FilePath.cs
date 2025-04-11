@@ -34,6 +34,53 @@ namespace PostalCW
             control.Region = new Region(path);
         }
 
+        // == BROWSE BUTTON ==
+        private void BrowseBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "Select Postman Data File";
+            dialog.Filter = "Text files (*.txt)|*.txt";
 
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                textfilePath.Text = dialog.FileName;
+            }
+        }
+
+        // == NEXT / INSERT BUTTON ==
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            string filePath = textfilePath.Text.Trim();
+
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("Invalid file path. Please select a valid .txt file.", "Invalid Path", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Program.dataFilePath = filePath;
+            Program.LoadPostmanData();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        // == SKIP BUTTON ==
+        private void SkipBtn_Click(object sender, EventArgs e)
+        {
+            if (Program.DatabaseHasPostmanData())
+            {
+                this.DialogResult = DialogResult.Ignore;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("The database is currently empty. Please insert a valid file path first.", "No Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void textfilePath_TextChanged(object sender, EventArgs e)
+        {
+            // Optional: live validation or placeholder handling
+        }
     }
 }
