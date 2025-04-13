@@ -54,7 +54,7 @@ cd PostalManagementSystem
 
 ### 1. Open the Solution
 
-Open `PostalCW.sln` in Visual Studio.
+Open `ParcelX.sln` in Visual Studio.
 
 ### 2. Build the Project
 
