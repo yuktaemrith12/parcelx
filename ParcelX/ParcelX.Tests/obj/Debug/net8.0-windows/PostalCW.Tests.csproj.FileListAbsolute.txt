@@ -1,12 +1,5 @@
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\.msCoverageExtensionSourceRootsMapping_PostalCW.Tests
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\.msCoverageSourceRootsMapping_PostalCW.Tests
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.csproj.AssemblyReference.cache
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.gentestingplatformentrypointinputcache.cache
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.genautoregisteredextensionsinputcache.cache
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.AssemblyInfoInputs.cache
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.AssemblyInfo.cs
-C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\testhost.dll
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\PostalCW.deps.json
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\PostalCW.runtimeconfig.json
@@ -292,6 +285,13 @@ C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\Micr
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\PostalCW.dll
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\PostalCW.pdb
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\bin\Debug\net8.0-windows\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.csproj.AssemblyReference.cache
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.gentestingplatformentrypointinputcache.cache
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.genautoregisteredextensionsinputcache.cache
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.AssemblyInfoInputs.cache
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.AssemblyInfo.cs
+C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.9E92BB00.Up2Date
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\PostalCW.Tests.dll
 C:\Users\Abhinav\Documents\PostalCW\PostalCW.Tests\obj\Debug\net8.0-windows\refint\PostalCW.Tests.dll
